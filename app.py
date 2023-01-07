@@ -33,7 +33,7 @@ def initial_display():
     #タイトル表示
     st.title('音楽推薦システム')
     #Spotify Playlist の共有URLを入力
-    URL = st.text_input('URLを入力',value='https://open.spotify.com/playlist/2WYGH0TlgpPwIdMZp0zhVH?si=FM2FYSlgSXu0j-HtREpgcQ')
+    URL = st.text_input('URLを入力',value='https://open.spotify.com/playlist/4ovXpa5zN9xoannaeP7OZF?si=rb5xpbtoQQeHZPeyiX97mw')
 
     #ユーザが選択した要素
     tempo = st.slider(label='テンポ',min_value=0,max_value=100,value=50)
