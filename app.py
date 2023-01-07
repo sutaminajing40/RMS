@@ -86,6 +86,7 @@ def load_items(genre):
     #all_song_data:ジャンルに対応した全ての楽曲のデータ
     all_song_data = pd.DataFrame()
     #ジャンルに対応した.csvのパスを取得
+    st.write(song_path)
     for path in song_path:
         song_data = pd.read_csv(path)
         all_song_data = pd.concat([all_song_data,song_data])
