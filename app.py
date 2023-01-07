@@ -77,11 +77,11 @@ def url_to_items(URL):
 def load_items(genre):
     #選択されたジャンルによって取得する曲を選択
     if genre == '全て選択':
-        song_path = glob.glob('sutaminajing40/rms/main//app/csvfiles/*/*.csv')
+        song_path = glob.glob('sutaminajing40/rms/main/app/csvfiles/*/*.csv')
     if genre == 'ボカロ':
-        song_path = glob.glob('sutaminajing40/rms/main//app/csvfiles/vocaloid/*.csv')
+        song_path = glob.glob('sutaminajing40/rms/main/app/csvfiles/vocaloid/*.csv')
     if genre == 'J-POP':
-        song_path = glob.glob('sutaminajing40/rms/main//app/csvfiles/Jpop/*.csv')
+        song_path = glob.glob('sutaminajing40/rms/main/app/csvfiles/Jpop/*.csv')
 
     #all_song_data:ジャンルに対応した全ての楽曲のデータ
     all_song_data = pd.DataFrame()
