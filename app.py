@@ -5,7 +5,7 @@ import streamlit as st
 import os
 import pandas as pd
 import spotipy
-from . import spotify_id as si
+import spotify_id as si
 from spotipy.oauth2 import SpotifyOAuth
 
 
