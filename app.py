@@ -146,7 +146,7 @@ def create_playlist(playlist_name,items):
     scope = "playlist-modify-public"
     sp2 = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=si.id(),
                                                 client_secret=si.secret(),
-                                                redirect_uri="http://localhost:8888/callback",
+                                                redirect_uri="hhttps://music-recommender-system.streamlit.app",
                                                 scope=scope),
                                                 language='ja')
 
@@ -158,7 +158,7 @@ def create_playlist(playlist_name,items):
 if __name__ == '__main__':
     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=si.id(),
                                             client_secret=si.secret(),
-                                            redirect_uri="http://localhost:8888/callback",
+                                            redirect_uri="https://music-recommender-system.streamlit.app",
                                             scope="user-read-recently-played"),
                                             language='ja')
     main()
