@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+ミルククラウン・オン・ソーネチカ,0.572,0.966,1,-3.286,0,0.0363,0.0415,0,0.179,0.933,127.486,audio_features,2jxakPQFR2IBXVmvt5y8YB,spotify:track:2jxakPQFR2IBXVmvt5y8YB,https://api.spotify.com/v1/tracks/2jxakPQFR2IBXVmvt5y8YB,https://api.spotify.com/v1/audio-analysis/2jxakPQFR2IBXVmvt5y8YB,216544,4

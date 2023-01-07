@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Rokuchonen to ichiya monogatari,0.591,0.945,11,-3.223,0,0.136,0.000642,0.0058,0.115,0.548,93.02,audio_features,6F1dWmY6wDqLTXb3Omt1Oz,spotify:track:6F1dWmY6wDqLTXb3Omt1Oz,https://api.spotify.com/v1/tracks/6F1dWmY6wDqLTXb3Omt1Oz,https://api.spotify.com/v1/audio-analysis/6F1dWmY6wDqLTXb3Omt1Oz,215013,4

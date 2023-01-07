@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Chiefing,0.585,0.685,9,-8.641,1,0.488,0.0242,0.000951,0.138,0.28,152.974,audio_features,6O0qdcMOfi51Lv8YCVhI7K,spotify:track:6O0qdcMOfi51Lv8YCVhI7K,https://api.spotify.com/v1/tracks/6O0qdcMOfi51Lv8YCVhI7K,https://api.spotify.com/v1/audio-analysis/6O0qdcMOfi51Lv8YCVhI7K,163414,4

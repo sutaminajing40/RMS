@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+BIRTH,0.376,0.932,1,-6.194,0,0.0628,0.000344,0.981,0.293,0.245,176.073,audio_features,43Ke8Mapbd8cP0DGh3KyF5,spotify:track:43Ke8Mapbd8cP0DGh3KyF5,https://api.spotify.com/v1/tracks/43Ke8Mapbd8cP0DGh3KyF5,https://api.spotify.com/v1/audio-analysis/43Ke8Mapbd8cP0DGh3KyF5,142307,4

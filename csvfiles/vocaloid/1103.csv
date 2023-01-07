@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+A Voice Outside Of Range,0.238,0.985,9,-3.73,1,0.109,3.87e-05,0.025,0.397,0.112,97.03,audio_features,2x9rBNn7mbfv91SaU28RQO,spotify:track:2x9rBNn7mbfv91SaU28RQO,https://api.spotify.com/v1/tracks/2x9rBNn7mbfv91SaU28RQO,https://api.spotify.com/v1/audio-analysis/2x9rBNn7mbfv91SaU28RQO,93553,4

@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Comedy,0.786,0.437,7,-6.895,0,0.0605,0.76,0.00452,0.438,0.806,87.992,audio_features,3SKdGlG5mkaRFOqvaGbLSl,spotify:track:3SKdGlG5mkaRFOqvaGbLSl,https://api.spotify.com/v1/tracks/3SKdGlG5mkaRFOqvaGbLSl,https://api.spotify.com/v1/audio-analysis/3SKdGlG5mkaRFOqvaGbLSl,90000,4

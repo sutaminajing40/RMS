@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+shinro soudan,0.541,0.976,1,-2.59,0,0.0704,0.003,0.126,0.341,0.511,114.882,audio_features,1pIXqrC6nMM8KSg2ZMTlod,spotify:track:1pIXqrC6nMM8KSg2ZMTlod,https://api.spotify.com/v1/tracks/1pIXqrC6nMM8KSg2ZMTlod,https://api.spotify.com/v1/audio-analysis/1pIXqrC6nMM8KSg2ZMTlod,159000,4

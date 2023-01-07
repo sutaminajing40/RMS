@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Tricolor,0.531,0.84,9,-7.509,1,0.05,0.01,0.000408,0.168,0.385,119.963,audio_features,0zTsLJSUdBpp5QYTgRQWpS,spotify:track:0zTsLJSUdBpp5QYTgRQWpS,https://api.spotify.com/v1/tracks/0zTsLJSUdBpp5QYTgRQWpS,https://api.spotify.com/v1/audio-analysis/0zTsLJSUdBpp5QYTgRQWpS,214995,4

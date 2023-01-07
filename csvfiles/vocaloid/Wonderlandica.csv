@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Anima Code,0.203,0.774,5,-7.604,1,0.055,0.0784,0.457,0.125,0.178,138.961,audio_features,1k5JOYZGO5QijKXnKbP7ph,spotify:track:1k5JOYZGO5QijKXnKbP7ph,https://api.spotify.com/v1/tracks/1k5JOYZGO5QijKXnKbP7ph,https://api.spotify.com/v1/audio-analysis/1k5JOYZGO5QijKXnKbP7ph,317000,4

@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+RAINY,0.592,0.945,9,-3.404,1,0.0889,0.00288,0,0.165,0.708,99.92,audio_features,4OqOch9o2obT5ikX0A1p8O,spotify:track:4OqOch9o2obT5ikX0A1p8O,https://api.spotify.com/v1/tracks/4OqOch9o2obT5ikX0A1p8O,https://api.spotify.com/v1/audio-analysis/4OqOch9o2obT5ikX0A1p8O,208350,4

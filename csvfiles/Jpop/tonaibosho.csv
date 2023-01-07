@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+クッキー,0.622,0.704,7,-4.443,1,0.0333,0.259,0,0.083,0.489,89.996,audio_features,7CpPQLXBSylAgXhQ4fVgZN,spotify:track:7CpPQLXBSylAgXhQ4fVgZN,https://api.spotify.com/v1/tracks/7CpPQLXBSylAgXhQ4fVgZN,https://api.spotify.com/v1/audio-analysis/7CpPQLXBSylAgXhQ4fVgZN,215600,4
+クッキー - Instrumental,0.509,0.538,7,-9.58,1,0.0275,0.0212,0.779,0.135,0.311,90.018,audio_features,6FiewNrnBvKWtVeHZekfLQ,spotify:track:6FiewNrnBvKWtVeHZekfLQ,https://api.spotify.com/v1/tracks/6FiewNrnBvKWtVeHZekfLQ,https://api.spotify.com/v1/audio-analysis/6FiewNrnBvKWtVeHZekfLQ,215600,4

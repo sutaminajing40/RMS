@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+GALAXY,0.692,0.875,4,-7.804,0,0.2,0.162,0.00557,0.0821,0.577,146.034,audio_features,69npLkRHe0K28dLseLUn9z,spotify:track:69npLkRHe0K28dLseLUn9z,https://api.spotify.com/v1/tracks/69npLkRHe0K28dLseLUn9z,https://api.spotify.com/v1/audio-analysis/69npLkRHe0K28dLseLUn9z,208400,4
+rain drop - Arch remix,0.403,0.951,0,-3.468,1,0.0369,9.09e-05,0.0141,0.0771,0.116,169.967,audio_features,1O1DjvZeFqsFW3oy0EHv5K,spotify:track:1O1DjvZeFqsFW3oy0EHv5K,https://api.spotify.com/v1/tracks/1O1DjvZeFqsFW3oy0EHv5K,https://api.spotify.com/v1/audio-analysis/1O1DjvZeFqsFW3oy0EHv5K,275355,4

@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+ラセンナワタシ,0.449,0.808,10,-5.964,0,0.141,0.463,0.000346,0.124,0.464,89.51,audio_features,3oSHU0P3mFAMxEy56Ddt4O,spotify:track:3oSHU0P3mFAMxEy56Ddt4O,https://api.spotify.com/v1/tracks/3oSHU0P3mFAMxEy56Ddt4O,https://api.spotify.com/v1/audio-analysis/3oSHU0P3mFAMxEy56Ddt4O,234588,1

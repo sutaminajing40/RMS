@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+アンダンテ feat.音街ウナ,0.681,0.695,3,-6.978,1,0.0314,0.0892,0.000115,0.294,0.85,125.018,audio_features,6XqG6rA1nnAgnlCIv8a0Gf,spotify:track:6XqG6rA1nnAgnlCIv8a0Gf,https://api.spotify.com/v1/tracks/6XqG6rA1nnAgnlCIv8a0Gf,https://api.spotify.com/v1/audio-analysis/6XqG6rA1nnAgnlCIv8a0Gf,223189,4

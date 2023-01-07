@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Yuugure Jetson,0.575,0.965,11,-3.026,0,0.0518,0.0125,0,0.0999,0.563,115.002,audio_features,42dT2rLU8VYOeIwceRsBV5,spotify:track:42dT2rLU8VYOeIwceRsBV5,https://api.spotify.com/v1/tracks/42dT2rLU8VYOeIwceRsBV5,https://api.spotify.com/v1/audio-analysis/42dT2rLU8VYOeIwceRsBV5,269300,3
+Tsuki Ni Tawagoto,0.549,0.967,1,-1.47,0,0.0374,0.113,7.84e-05,0.102,0.975,90.021,audio_features,7DVY7thwVrRkwL98NruaQ6,spotify:track:7DVY7thwVrRkwL98NruaQ6,https://api.spotify.com/v1/tracks/7DVY7thwVrRkwL98NruaQ6,https://api.spotify.com/v1/audio-analysis/7DVY7thwVrRkwL98NruaQ6,213500,4

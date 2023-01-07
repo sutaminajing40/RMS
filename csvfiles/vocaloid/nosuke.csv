@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+メリー!,0.862,0.411,6,-8.373,0,0.22,0.008,0.0836,0.0574,0.45,119.893,audio_features,0ApAyERy9fQl88JOIO1V5I,spotify:track:0ApAyERy9fQl88JOIO1V5I,https://api.spotify.com/v1/tracks/0ApAyERy9fQl88JOIO1V5I,https://api.spotify.com/v1/audio-analysis/0ApAyERy9fQl88JOIO1V5I,80000,4

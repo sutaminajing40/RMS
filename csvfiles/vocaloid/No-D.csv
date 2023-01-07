@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+No,0.447,0.935,11,-5.883,1,0.0622,4.98e-06,0.467,0.163,0.379,144.983,audio_features,2mbjS2Q9JScULmahkoPzTs,spotify:track:2mbjS2Q9JScULmahkoPzTs,https://api.spotify.com/v1/tracks/2mbjS2Q9JScULmahkoPzTs,https://api.spotify.com/v1/audio-analysis/2mbjS2Q9JScULmahkoPzTs,237720,4

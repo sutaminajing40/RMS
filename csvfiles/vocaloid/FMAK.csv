@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Violent Mandala Dance,0.453,0.805,11,-6.301,0,0.0444,0.00772,0.0767,0.0476,0.22,104.959,audio_features,5UxzuJ7bRG6e50TuLodvzF,spotify:track:5UxzuJ7bRG6e50TuLodvzF,https://api.spotify.com/v1/tracks/5UxzuJ7bRG6e50TuLodvzF,https://api.spotify.com/v1/audio-analysis/5UxzuJ7bRG6e50TuLodvzF,198201,3

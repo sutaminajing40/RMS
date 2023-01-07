@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Not scared,0.602,0.523,5,-6.868,1,0.0262,0.0215,1.6e-06,0.258,0.29,87.969,audio_features,4rY5LUIUVxPgD8WoFNdfKH,spotify:track:4rY5LUIUVxPgD8WoFNdfKH,https://api.spotify.com/v1/tracks/4rY5LUIUVxPgD8WoFNdfKH,https://api.spotify.com/v1/audio-analysis/4rY5LUIUVxPgD8WoFNdfKH,223763,4

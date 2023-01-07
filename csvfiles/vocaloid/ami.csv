@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Irresolute,0.546,0.719,4,-7.795,1,0.0318,6.97e-05,6.06e-05,0.119,0.221,87.479,audio_features,1L1Oo7pL7UbWBtXFWsmPRK,spotify:track:1L1Oo7pL7UbWBtXFWsmPRK,https://api.spotify.com/v1/tracks/1L1Oo7pL7UbWBtXFWsmPRK,https://api.spotify.com/v1/audio-analysis/1L1Oo7pL7UbWBtXFWsmPRK,153652,4

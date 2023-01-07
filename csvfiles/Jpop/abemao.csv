@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+I Never Knew,0.481,0.567,9,-5.752,1,0.113,0.0975,0,0.11,0.499,176.644,audio_features,6VHdE3QiSt2CMnW1XVJZJ8,spotify:track:6VHdE3QiSt2CMnW1XVJZJ8,https://api.spotify.com/v1/tracks/6VHdE3QiSt2CMnW1XVJZJ8,https://api.spotify.com/v1/audio-analysis/6VHdE3QiSt2CMnW1XVJZJ8,251187,4
+Sailing,0.441,0.438,8,-11.955,1,0.035,0.534,0.00395,0.123,0.223,164.001,audio_features,5xE1f0aqfPjURsLiGjdukh,spotify:track:5xE1f0aqfPjURsLiGjdukh,https://api.spotify.com/v1/tracks/5xE1f0aqfPjURsLiGjdukh,https://api.spotify.com/v1/audio-analysis/5xE1f0aqfPjURsLiGjdukh,349987,3

@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Souzoujou No Bide Vader,0.484,0.99,4,-2.343,0,0.171,0.179,0.000207,0.316,0.599,159.94,audio_features,44PpunnSvViGspq2XtOGyh,spotify:track:44PpunnSvViGspq2XtOGyh,https://api.spotify.com/v1/tracks/44PpunnSvViGspq2XtOGyh,https://api.spotify.com/v1/audio-analysis/44PpunnSvViGspq2XtOGyh,288000,4

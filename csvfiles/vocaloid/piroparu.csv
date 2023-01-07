@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+わすれもの,0.407,0.923,6,-4.451,1,0.0629,0.0196,0,0.0421,0.304,181.981,audio_features,262pfgczaLejWvSYx3DEOx,spotify:track:262pfgczaLejWvSYx3DEOx,https://api.spotify.com/v1/tracks/262pfgczaLejWvSYx3DEOx,https://api.spotify.com/v1/audio-analysis/262pfgczaLejWvSYx3DEOx,212307,4

@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+回生,0.724,0.82,1,-5.862,1,0.0413,0.178,2.93e-05,0.287,0.677,161.965,audio_features,6LFKvhZlrAWkSp7kzH59Lg,spotify:track:6LFKvhZlrAWkSp7kzH59Lg,https://api.spotify.com/v1/tracks/6LFKvhZlrAWkSp7kzH59Lg,https://api.spotify.com/v1/audio-analysis/6LFKvhZlrAWkSp7kzH59Lg,158519,4

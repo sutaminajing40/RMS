@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+ミシェルに花束を,0.748,0.679,7,-7.865,0,0.0663,0.0976,1.26e-05,0.317,0.543,116.044,audio_features,0JrRwVKLUVag2ecOLYJeoL,spotify:track:0JrRwVKLUVag2ecOLYJeoL,https://api.spotify.com/v1/tracks/0JrRwVKLUVag2ecOLYJeoL,https://api.spotify.com/v1/audio-analysis/0JrRwVKLUVag2ecOLYJeoL,157435,4

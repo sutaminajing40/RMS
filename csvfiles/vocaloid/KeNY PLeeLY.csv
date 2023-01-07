@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Sakura,0.565,0.902,10,-3.134,1,0.0367,0.00791,2.64e-06,0.777,0.791,132.014,audio_features,04xkeLWqCZwUtMQmLEvikC,spotify:track:04xkeLWqCZwUtMQmLEvikC,https://api.spotify.com/v1/tracks/04xkeLWqCZwUtMQmLEvikC,https://api.spotify.com/v1/audio-analysis/04xkeLWqCZwUtMQmLEvikC,231293,4

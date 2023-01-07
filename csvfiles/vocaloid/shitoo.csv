@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+第四の壁、向こうより,0.616,0.621,0,-7.066,1,0.0435,0.529,0.00145,0.109,0.312,109.954,audio_features,0QiwJ2QzA7cKpEFIdM83Yc,spotify:track:0QiwJ2QzA7cKpEFIdM83Yc,https://api.spotify.com/v1/tracks/0QiwJ2QzA7cKpEFIdM83Yc,https://api.spotify.com/v1/audio-analysis/0QiwJ2QzA7cKpEFIdM83Yc,239033,4

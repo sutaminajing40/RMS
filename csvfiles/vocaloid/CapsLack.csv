@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+"First cry, deoxyribon",0.749,0.611,3,-8.26,1,0.0878,0.25,0,0.079,0.73,133.001,audio_features,4dYYVQiL4crJUdXwbYZ1dQ,spotify:track:4dYYVQiL4crJUdXwbYZ1dQ,https://api.spotify.com/v1/tracks/4dYYVQiL4crJUdXwbYZ1dQ,https://api.spotify.com/v1/audio-analysis/4dYYVQiL4crJUdXwbYZ1dQ,158000,4

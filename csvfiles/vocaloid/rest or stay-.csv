@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Final Dance,0.305,0.98,7,-4.863,1,0.0646,0.000129,0.55,0.138,0.231,177.974,audio_features,7oWMaexbHBA6Otj0LzEscB,spotify:track:7oWMaexbHBA6Otj0LzEscB,https://api.spotify.com/v1/tracks/7oWMaexbHBA6Otj0LzEscB,https://api.spotify.com/v1/audio-analysis/7oWMaexbHBA6Otj0LzEscB,263698,4

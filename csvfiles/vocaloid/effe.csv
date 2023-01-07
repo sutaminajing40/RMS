@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+[s],0.406,0.733,10,-2.872,0,0.0372,0.0519,0.00161,0.36,0.134,156.811,audio_features,1ibO9CP2IpVGOg5qqO1GSo,spotify:track:1ibO9CP2IpVGOg5qqO1GSo,https://api.spotify.com/v1/tracks/1ibO9CP2IpVGOg5qqO1GSo,https://api.spotify.com/v1/audio-analysis/1ibO9CP2IpVGOg5qqO1GSo,360000,4

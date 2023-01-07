@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+round and fast and crazy rhythm,0.708,0.96,11,-7.589,0,0.0611,0.222,0.0646,0.0385,0.87,96.036,audio_features,6RnA9MsiDbl0Qm1FN4xIxS,spotify:track:6RnA9MsiDbl0Qm1FN4xIxS,https://api.spotify.com/v1/tracks/6RnA9MsiDbl0Qm1FN4xIxS,https://api.spotify.com/v1/audio-analysis/6RnA9MsiDbl0Qm1FN4xIxS,122710,4

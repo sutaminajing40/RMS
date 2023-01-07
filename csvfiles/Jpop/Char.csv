@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Unholy (Cover),0.617,0.582,2,-5.098,1,0.03,0.0144,3.24e-05,0.22,0.12,131.015,audio_features,12F3BzWlom8D7Y9jAIBPXv,spotify:track:12F3BzWlom8D7Y9jAIBPXv,https://api.spotify.com/v1/tracks/12F3BzWlom8D7Y9jAIBPXv,https://api.spotify.com/v1/audio-analysis/12F3BzWlom8D7Y9jAIBPXv,171308,4
+Cellar,0.685,0.425,9,-11.08,1,0.0359,0.17,0.0279,0.326,0.0631,102.016,audio_features,52P8KPe9mPkCsAYm9wGTw3,spotify:track:52P8KPe9mPkCsAYm9wGTw3,https://api.spotify.com/v1/tracks/52P8KPe9mPkCsAYm9wGTw3,https://api.spotify.com/v1/audio-analysis/52P8KPe9mPkCsAYm9wGTw3,204191,4

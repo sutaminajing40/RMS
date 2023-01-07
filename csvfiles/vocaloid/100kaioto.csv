@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+最底辺の嫌がらせ,0.497,0.935,9,-3.127,1,0.0736,0.00923,0,0.048,0.885,168.215,audio_features,5OgMqc1WaEOgqUDkWjb3Ra,spotify:track:5OgMqc1WaEOgqUDkWjb3Ra,https://api.spotify.com/v1/tracks/5OgMqc1WaEOgqUDkWjb3Ra,https://api.spotify.com/v1/audio-analysis/5OgMqc1WaEOgqUDkWjb3Ra,222173,4

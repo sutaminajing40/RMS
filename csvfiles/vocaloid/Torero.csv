@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Torero,0.435,0.36,7,-7.704,1,0.0302,0.281,0.00968,0.0797,0.187,110.822,audio_features,3zzR0rWrC8WXfk3l3JsJZc,spotify:track:3zzR0rWrC8WXfk3l3JsJZc,https://api.spotify.com/v1/tracks/3zzR0rWrC8WXfk3l3JsJZc,https://api.spotify.com/v1/audio-analysis/3zzR0rWrC8WXfk3l3JsJZc,271053,3
+Shot in the Dark,0.176,0.537,6,-6.278,0,0.0359,0.0306,0.000832,0.118,0.325,176.095,audio_features,0PJ19azUfef7EUGpAS7vuk,spotify:track:0PJ19azUfef7EUGpAS7vuk,https://api.spotify.com/v1/tracks/0PJ19azUfef7EUGpAS7vuk,https://api.spotify.com/v1/audio-analysis/0PJ19azUfef7EUGpAS7vuk,251293,4

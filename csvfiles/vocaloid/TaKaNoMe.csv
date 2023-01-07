@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+hope,0.161,0.629,6,-8.557,0,0.0555,0.000264,0.733,0.216,0.481,165.233,audio_features,0FLDRtvgc8awk4mpZHupAG,spotify:track:0FLDRtvgc8awk4mpZHupAG,https://api.spotify.com/v1/tracks/0FLDRtvgc8awk4mpZHupAG,https://api.spotify.com/v1/audio-analysis/0FLDRtvgc8awk4mpZHupAG,264727,4

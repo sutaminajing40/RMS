@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+タイムリミット,0.638,0.943,0,-5.681,1,0.0381,0.267,2.78e-06,0.375,0.675,139.982,audio_features,3aSFnOQTpowxBWUQWHWfIU,spotify:track:3aSFnOQTpowxBWUQWHWfIU,https://api.spotify.com/v1/tracks/3aSFnOQTpowxBWUQWHWfIU,https://api.spotify.com/v1/audio-analysis/3aSFnOQTpowxBWUQWHWfIU,259033,4
+Interlude Vol.01,0.537,0.653,3,-9.49,1,0.0338,0.803,0.933,0.0838,0.673,125.954,audio_features,4QVwG2jMq7Dq4ByYiKax8a,spotify:track:4QVwG2jMq7Dq4ByYiKax8a,https://api.spotify.com/v1/tracks/4QVwG2jMq7Dq4ByYiKax8a,https://api.spotify.com/v1/audio-analysis/4QVwG2jMq7Dq4ByYiKax8a,199588,4

@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+ロイヤルシンフォニー,0.596,0.908,9,-2.448,1,0.0638,0.116,0,0.279,0.769,117.539,audio_features,4JtAbaFj9xZfhSkVcrnTJy,spotify:track:4JtAbaFj9xZfhSkVcrnTJy,https://api.spotify.com/v1/tracks/4JtAbaFj9xZfhSkVcrnTJy,https://api.spotify.com/v1/audio-analysis/4JtAbaFj9xZfhSkVcrnTJy,194765,4
+Bring back summer,0.549,0.957,1,-2.858,1,0.0413,0.0674,3.03e-05,0.516,0.601,105.005,audio_features,0oNXlXIJkFj7n2L33JC4p4,spotify:track:0oNXlXIJkFj7n2L33JC4p4,https://api.spotify.com/v1/tracks/0oNXlXIJkFj7n2L33JC4p4,https://api.spotify.com/v1/audio-analysis/0oNXlXIJkFj7n2L33JC4p4,360435,4

@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+バグラグ,0.345,0.931,0,-2.647,1,0.178,0.00107,0,0.234,0.291,193.237,audio_features,7Ejn58J6H0wsE9bX1vbGtE,spotify:track:7Ejn58J6H0wsE9bX1vbGtE,https://api.spotify.com/v1/tracks/7Ejn58J6H0wsE9bX1vbGtE,https://api.spotify.com/v1/audio-analysis/7Ejn58J6H0wsE9bX1vbGtE,256204,4

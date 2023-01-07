@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+ルビーのネックレス feat.CUL,0.627,0.365,0,-8.493,1,0.0303,0.718,2.51e-06,0.0995,0.478,119.781,audio_features,4TgyVdBQZdUQmOzB0b6EKf,spotify:track:4TgyVdBQZdUQmOzB0b6EKf,https://api.spotify.com/v1/tracks/4TgyVdBQZdUQmOzB0b6EKf,https://api.spotify.com/v1/audio-analysis/4TgyVdBQZdUQmOzB0b6EKf,143581,4

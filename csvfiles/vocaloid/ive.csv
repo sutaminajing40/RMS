@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+yomaigoto,0.711,0.934,6,-4.562,0,0.0413,0.319,2.15e-05,0.264,0.893,141.056,audio_features,1l1bbAwbCqVTinW7fpzp6M,spotify:track:1l1bbAwbCqVTinW7fpzp6M,https://api.spotify.com/v1/tracks/1l1bbAwbCqVTinW7fpzp6M,https://api.spotify.com/v1/audio-analysis/1l1bbAwbCqVTinW7fpzp6M,183048,4

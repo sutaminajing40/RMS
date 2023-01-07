@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+clear sky blue,0.49,0.879,7,-9.277,1,0.03,0.000126,0.201,0.343,0.861,90.997,audio_features,5z4aYJcUs3MCxAcVibWrFF,spotify:track:5z4aYJcUs3MCxAcVibWrFF,https://api.spotify.com/v1/tracks/5z4aYJcUs3MCxAcVibWrFF,https://api.spotify.com/v1/audio-analysis/5z4aYJcUs3MCxAcVibWrFF,217000,4

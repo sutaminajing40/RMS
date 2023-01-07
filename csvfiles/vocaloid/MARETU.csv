@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Yamitsuki,0.473,0.931,5,-6.937,1,0.0474,0.0263,0.0397,0.298,0.875,207.883,audio_features,2Qtl87Ssppqbn7vmBCb4AM,spotify:track:2Qtl87Ssppqbn7vmBCb4AM,https://api.spotify.com/v1/tracks/2Qtl87Ssppqbn7vmBCb4AM,https://api.spotify.com/v1/audio-analysis/2Qtl87Ssppqbn7vmBCb4AM,153587,4
+ドクハク,0.655,0.903,10,-3.098,0,0.0307,0.00821,6.74e-05,0.348,0.6,104.025,audio_features,603y8QOcKOe1tZ0sOt2gS7,spotify:track:603y8QOcKOe1tZ0sOt2gS7,https://api.spotify.com/v1/tracks/603y8QOcKOe1tZ0sOt2gS7,https://api.spotify.com/v1/audio-analysis/603y8QOcKOe1tZ0sOt2gS7,245707,4

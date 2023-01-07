@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+The Control Folk Festa Spring 2014,0.251,0.96,8,-4.759,1,0.0846,0.00138,0.575,0.312,0.347,170.006,audio_features,0U52KUJF7NMr0DoYuHF604,spotify:track:0U52KUJF7NMr0DoYuHF604,https://api.spotify.com/v1/tracks/0U52KUJF7NMr0DoYuHF604,https://api.spotify.com/v1/audio-analysis/0U52KUJF7NMr0DoYuHF604,263053,4
+うたうたい,0.741,0.782,6,-6.964,0,0.0465,0.0705,0.000122,0.0848,0.594,159.893,audio_features,6WGaGXgsfcmIg9797siljR,spotify:track:6WGaGXgsfcmIg9797siljR,https://api.spotify.com/v1/tracks/6WGaGXgsfcmIg9797siljR,https://api.spotify.com/v1/audio-analysis/6WGaGXgsfcmIg9797siljR,300000,4

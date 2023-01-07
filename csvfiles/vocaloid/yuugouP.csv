@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Pandemic,0.385,0.947,11,-2.536,0,0.108,0.218,0,0.0678,0.381,173.853,audio_features,2fzHCqI7omMCTRoxhgo9gR,spotify:track:2fzHCqI7omMCTRoxhgo9gR,https://api.spotify.com/v1/tracks/2fzHCqI7omMCTRoxhgo9gR,https://api.spotify.com/v1/audio-analysis/2fzHCqI7omMCTRoxhgo9gR,245900,4
+クラブナイトメア,0.595,0.979,0,-4.511,0,0.0412,0.0378,0,0.109,0.912,142.011,audio_features,5WdcyrwdBHqll5uNyuW61o,spotify:track:5WdcyrwdBHqll5uNyuW61o,https://api.spotify.com/v1/tracks/5WdcyrwdBHqll5uNyuW61o,https://api.spotify.com/v1/audio-analysis/5WdcyrwdBHqll5uNyuW61o,204929,3

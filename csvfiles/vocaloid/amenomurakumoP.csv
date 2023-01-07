@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Anemone,0.457,0.508,11,-6.541,0,0.0284,0.586,0,0.125,0.351,82.093,audio_features,61wX87tj2HtcsDWRf37FbP,spotify:track:61wX87tj2HtcsDWRf37FbP,https://api.spotify.com/v1/tracks/61wX87tj2HtcsDWRf37FbP,https://api.spotify.com/v1/audio-analysis/61wX87tj2HtcsDWRf37FbP,245946,4

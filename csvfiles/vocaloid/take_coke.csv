@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+otamajakushi to umbrella,0.816,0.691,1,-4.212,0,0.0331,0.328,0.00226,0.105,0.936,114.004,audio_features,1YjdKhiJaf0gv3DMOyowmg,spotify:track:1YjdKhiJaf0gv3DMOyowmg,https://api.spotify.com/v1/tracks/1YjdKhiJaf0gv3DMOyowmg,https://api.spotify.com/v1/audio-analysis/1YjdKhiJaf0gv3DMOyowmg,354722,4

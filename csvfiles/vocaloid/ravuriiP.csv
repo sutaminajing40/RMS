@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+VOiCE -MIKUNOPOLIS in LOS ANGELES Live-,0.484,0.925,3,-6.781,1,0.0456,0.503,0,0.397,0.337,134.914,audio_features,19K4PbbsrATl3SYgbHQiCt,spotify:track:19K4PbbsrATl3SYgbHQiCt,https://api.spotify.com/v1/tracks/19K4PbbsrATl3SYgbHQiCt,https://api.spotify.com/v1/audio-analysis/19K4PbbsrATl3SYgbHQiCt,41493,3

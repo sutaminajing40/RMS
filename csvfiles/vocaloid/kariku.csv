@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+夏が零れてゆく,0.474,0.502,7,-4.508,1,0.0308,0.302,0,0.23,0.398,148.059,audio_features,1u6d9HaJzFa9JqKyMxDvJo,spotify:track:1u6d9HaJzFa9JqKyMxDvJo,https://api.spotify.com/v1/tracks/1u6d9HaJzFa9JqKyMxDvJo,https://api.spotify.com/v1/audio-analysis/1u6d9HaJzFa9JqKyMxDvJo,290897,4

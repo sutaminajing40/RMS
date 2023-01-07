@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Poker Face,0.516,0.893,0,-3.836,1,0.0363,0.000971,0.000106,0.14,0.483,92.013,audio_features,76Hrz33pZIzKcmwdvU2n1i,spotify:track:76Hrz33pZIzKcmwdvU2n1i,https://api.spotify.com/v1/tracks/76Hrz33pZIzKcmwdvU2n1i,https://api.spotify.com/v1/audio-analysis/76Hrz33pZIzKcmwdvU2n1i,200000,4

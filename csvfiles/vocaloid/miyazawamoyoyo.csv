@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+flax,0.72,0.527,8,-5.632,0,0.0409,0.359,0.693,0.113,0.386,94.973,audio_features,25DSapIN3TTJU5mheUiqsU,spotify:track:25DSapIN3TTJU5mheUiqsU,https://api.spotify.com/v1/tracks/25DSapIN3TTJU5mheUiqsU,https://api.spotify.com/v1/audio-analysis/25DSapIN3TTJU5mheUiqsU,212915,4

@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Ayana Kurepasu,0.35,0.949,8,-3.971,1,0.112,0.000338,0,0.0732,0.395,184.993,audio_features,13bYwkpOvbFcnFVpb7zjqJ,spotify:track:13bYwkpOvbFcnFVpb7zjqJ,https://api.spotify.com/v1/tracks/13bYwkpOvbFcnFVpb7zjqJ,https://api.spotify.com/v1/audio-analysis/13bYwkpOvbFcnFVpb7zjqJ,306800,4

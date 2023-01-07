@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+スパイラル・デイズ,0.406,0.906,7,-1.837,1,0.055,0.205,0,0.436,0.468,146.107,audio_features,3arHGZoRdH30jUhI7OHqIB,spotify:track:3arHGZoRdH30jUhI7OHqIB,https://api.spotify.com/v1/tracks/3arHGZoRdH30jUhI7OHqIB,https://api.spotify.com/v1/audio-analysis/3arHGZoRdH30jUhI7OHqIB,270375,4

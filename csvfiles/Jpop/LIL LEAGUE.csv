@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Rollah Coaster - Re Recorded,0.771,0.803,10,-4.518,1,0.0609,0.27,0,0.154,0.732,153.104,audio_features,6Exn04FOVlnSVVZlSL7ThM,spotify:track:6Exn04FOVlnSVVZlSL7ThM,https://api.spotify.com/v1/tracks/6Exn04FOVlnSVVZlSL7ThM,https://api.spotify.com/v1/audio-analysis/6Exn04FOVlnSVVZlSL7ThM,184968,4
+Rollah Coaster - Live,0.685,0.826,10,-6.097,1,0.0735,0.524,0,0.503,0.724,152.982,audio_features,056ObPgKj2f9VZfCFHPEz8,spotify:track:056ObPgKj2f9VZfCFHPEz8,https://api.spotify.com/v1/tracks/056ObPgKj2f9VZfCFHPEz8,https://api.spotify.com/v1/audio-analysis/056ObPgKj2f9VZfCFHPEz8,187796,4

@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Yuyake Sensitive,0.595,0.862,10,-1.827,0,0.0896,0.00703,0.0489,0.32,0.483,104.93,audio_features,6k3qryFM9Pcr1LQEW0s17N,spotify:track:6k3qryFM9Pcr1LQEW0s17N,https://api.spotify.com/v1/tracks/6k3qryFM9Pcr1LQEW0s17N,https://api.spotify.com/v1/audio-analysis/6k3qryFM9Pcr1LQEW0s17N,187315,4

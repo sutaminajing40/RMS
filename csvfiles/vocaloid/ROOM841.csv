@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+夜のまぼろし,0.452,0.852,2,-4.093,1,0.041,0.0265,0.00396,0.388,0.564,159.983,audio_features,2mpR852CB1OKL8jDaSttjG,spotify:track:2mpR852CB1OKL8jDaSttjG,https://api.spotify.com/v1/tracks/2mpR852CB1OKL8jDaSttjG,https://api.spotify.com/v1/audio-analysis/2mpR852CB1OKL8jDaSttjG,373344,4

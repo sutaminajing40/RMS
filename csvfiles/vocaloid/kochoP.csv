@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+832,0.373,0.871,5,-4.06,0,0.0735,0.00129,0.000128,0.211,0.88,120.016,audio_features,2YlPBUGvrpaVuha6Pct9ol,spotify:track:2YlPBUGvrpaVuha6Pct9ol,https://api.spotify.com/v1/tracks/2YlPBUGvrpaVuha6Pct9ol,https://api.spotify.com/v1/audio-analysis/2YlPBUGvrpaVuha6Pct9ol,240000,4
+フラワー・ガール,0.644,0.726,10,-4.249,1,0.0335,0.0299,0,0.173,0.843,124.968,audio_features,7otz2nAo698iy9lzyMmTur,spotify:track:7otz2nAo698iy9lzyMmTur,https://api.spotify.com/v1/tracks/7otz2nAo698iy9lzyMmTur,https://api.spotify.com/v1/audio-analysis/7otz2nAo698iy9lzyMmTur,271448,4

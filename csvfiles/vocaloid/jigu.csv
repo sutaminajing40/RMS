@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+レントリリー,0.62,0.688,1,-4.395,1,0.0346,0.0999,1.48e-05,0.0718,0.447,86.024,audio_features,3ieO5zauYv5iGY3KQDpE2o,spotify:track:3ieO5zauYv5iGY3KQDpE2o,https://api.spotify.com/v1/tracks/3ieO5zauYv5iGY3KQDpE2o,https://api.spotify.com/v1/audio-analysis/3ieO5zauYv5iGY3KQDpE2o,207209,4
+シンデレラ,0.368,0.829,0,-4.271,0,0.28,0.141,0,0.128,0.63,76.437,audio_features,2hh5wSMDjp7G3pmRzBxVwo,spotify:track:2hh5wSMDjp7G3pmRzBxVwo,https://api.spotify.com/v1/tracks/2hh5wSMDjp7G3pmRzBxVwo,https://api.spotify.com/v1/audio-analysis/2hh5wSMDjp7G3pmRzBxVwo,189635,5

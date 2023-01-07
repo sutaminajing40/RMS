@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+終わる夏に浮かぶ,0.54,0.797,4,-6.349,1,0.0343,0.554,0.000274,0.0997,0.0805,114.033,audio_features,00cp5TcPG4gHsihjZuYkoA,spotify:track:00cp5TcPG4gHsihjZuYkoA,https://api.spotify.com/v1/tracks/00cp5TcPG4gHsihjZuYkoA,https://api.spotify.com/v1/audio-analysis/00cp5TcPG4gHsihjZuYkoA,298947,4

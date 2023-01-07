@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Rafflesia -V3 version-,0.478,0.928,11,-3.914,0,0.0689,0.0937,0,0.277,0.611,131.014,audio_features,2BQMLE6e8uXaWFGhZjLZ8c,spotify:track:2BQMLE6e8uXaWFGhZjLZ8c,https://api.spotify.com/v1/tracks/2BQMLE6e8uXaWFGhZjLZ8c,https://api.spotify.com/v1/audio-analysis/2BQMLE6e8uXaWFGhZjLZ8c,221253,4

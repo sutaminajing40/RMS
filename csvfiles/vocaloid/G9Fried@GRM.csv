@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Miketsu No Matsuri,0.496,0.862,4,-2.347,0,0.0448,0.0109,0.000972,0.107,0.678,149.892,audio_features,0OEztiQrYAzUBiPya8YDwi,spotify:track:0OEztiQrYAzUBiPya8YDwi,https://api.spotify.com/v1/tracks/0OEztiQrYAzUBiPya8YDwi,https://api.spotify.com/v1/audio-analysis/0OEztiQrYAzUBiPya8YDwi,156000,4

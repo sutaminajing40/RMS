@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+マインドイブ,0.458,0.93,7,-2.483,1,0.217,0.0288,1.01e-06,0.0469,0.489,180.188,audio_features,6fkZnw8maXczj6AiwsJNHx,spotify:track:6fkZnw8maXczj6AiwsJNHx,https://api.spotify.com/v1/tracks/6fkZnw8maXczj6AiwsJNHx,https://api.spotify.com/v1/audio-analysis/6fkZnw8maXczj6AiwsJNHx,284119,4

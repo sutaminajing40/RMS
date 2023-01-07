@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+ふぇのめのん,0.541,0.839,10,-8.429,0,0.0582,0.197,0.932,0.0815,0.308,110.413,audio_features,4rOYd54sbtxvERLcClVhry,spotify:track:4rOYd54sbtxvERLcClVhry,https://api.spotify.com/v1/tracks/4rOYd54sbtxvERLcClVhry,https://api.spotify.com/v1/audio-analysis/4rOYd54sbtxvERLcClVhry,206537,4
+われらはハレ,0.639,0.844,2,-6.851,1,0.0461,0.0912,0.0286,0.371,0.659,104.987,audio_features,5HiXrNdnAsVaHWtpBQHcmE,spotify:track:5HiXrNdnAsVaHWtpBQHcmE,https://api.spotify.com/v1/tracks/5HiXrNdnAsVaHWtpBQHcmE,https://api.spotify.com/v1/audio-analysis/5HiXrNdnAsVaHWtpBQHcmE,198857,4

@@ -1,0 +1,3 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Okidokei,0.453,0.244,5,-19.913,1,0.0294,0.745,0.0923,0.125,0.187,124.321,audio_features,7sTbGPuMI1g90iwO8RnrHG,spotify:track:7sTbGPuMI1g90iwO8RnrHG,https://api.spotify.com/v1/tracks/7sTbGPuMI1g90iwO8RnrHG,https://api.spotify.com/v1/audio-analysis/7sTbGPuMI1g90iwO8RnrHG,404875,3
+君は僕のことを知らない,0.533,0.552,11,-5.364,1,0.0257,0.602,6.28e-06,0.142,0.523,80.006,audio_features,7svZ8SbFqnhmcIYT0FCdGT,spotify:track:7svZ8SbFqnhmcIYT0FCdGT,https://api.spotify.com/v1/tracks/7svZ8SbFqnhmcIYT0FCdGT,https://api.spotify.com/v1/audio-analysis/7svZ8SbFqnhmcIYT0FCdGT,300000,4

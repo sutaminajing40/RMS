@@ -1,0 +1,2 @@
+name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
+Last Summer Memories,0.614,0.893,11,-6.018,0,0.037,0.00693,1.03e-05,0.29,0.978,131.997,audio_features,75U9qLC98gkDfBkSjBcfJ1,spotify:track:75U9qLC98gkDfBkSjBcfJ1,https://api.spotify.com/v1/tracks/75U9qLC98gkDfBkSjBcfJ1,https://api.spotify.com/v1/audio-analysis/75U9qLC98gkDfBkSjBcfJ1,265720,4
