@@ -90,7 +90,7 @@ def load_items(genre):
         song_data = pd.read_csv(path)
         all_song_data = pd.concat([all_song_data,song_data])
 
-    target_song_data = pd.read_csv('/Users/iguchihiroto/Documents/programming/app/csvfiles/target_playlist_items.csv')
+    target_song_data = pd.read_csv('sutaminajing40/rms/main/app/csvfiles/target_playlist_items.csv')
     #推薦の対象となる曲にnotice = 1をそれ以外にnotice = 0を
     all_song_data['notice'] = 0
     target_song_data['notice'] = 1
