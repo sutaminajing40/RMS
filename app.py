@@ -143,15 +143,8 @@ def recommender(all_song_data,target_song_data,tempo,energy):
 
 
 def create_playlist(playlist_name,items):
-    scope = "playlist-modify-public"
-    sp2 = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=si.id(),
-                                                client_secret=si.secret(),
-                                                redirect_uri="hhttps://music-recommender-system.streamlit.app",
-                                                scope=scope),
-                                                language='ja')
-
-    id = sp2.user_playlist_create(user='nohoarito_yuzu_334129',name=playlist_name)['id']
-    sp2.playlist_add_items(playlist_id=id,items = items)
+    id = sp.user_playlist_create(user='nohoarito_yuzu_334129',name=playlist_name)['id']
+    sp.playlist_add_items(playlist_id=id,items = items)
     return id
 
 
@@ -159,6 +152,6 @@ if __name__ == '__main__':
     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=si.id(),
                                             client_secret=si.secret(),
                                             redirect_uri="https://example.com/callback/",
-                                            scope="user-read-recently-played"),
+                                            scope="user-read-recently-played playlist-modify-public"),
                                             language='ja')
     main()
