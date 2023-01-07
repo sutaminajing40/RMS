@@ -6,7 +6,7 @@ import os
 import pandas as pd
 import spotipy
 import spotify_id as si
-from spotipy.oauth2 import SpotifyOAuth
+from spotipy.oauth2 import SpotifyClientCredentials
 
 
 
@@ -148,9 +148,6 @@ def create_playlist(playlist_name,items):
     return id
 
 if __name__ == '__main__':
-    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=si.id(),
-                                            client_secret=si.secret(),
-                                            redirect_uri="https://music-recommender-system.streamlit.app/callback/",
-                                            scope="user-read-recently-played playlist-modify-public"),
-                                            language='ja')
+    auth_manager = SpotifyClientCredentials(client_id=si.id(),client_secret=si.secret())
+    sp = spotipy.Spotify(auth_manager=auth_manager)
     main()
