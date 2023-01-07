@@ -77,11 +77,11 @@ def url_to_items(URL):
 def load_items(genre):
     #選択されたジャンルによって取得する曲を選択
     if genre == '全て選択':
-        song_path = glob.glob('sutaminajing40/rms/main/app/csvfiles/*/*.csv')
+        song_path = glob.glob('sutaminajing40/rms/main/csvfiles/*/*.csv')
     if genre == 'ボカロ':
-        song_path = glob.glob('sutaminajing40/rms/main/app/csvfiles/vocaloid/*.csv')
+        song_path = glob.glob('sutaminajing40/rms/main/csvfiles/vocaloid/*.csv')
     if genre == 'J-POP':
-        song_path = glob.glob('sutaminajing40/rms/main/app/csvfiles/Jpop/*.csv')
+        song_path = glob.glob('sutaminajing40/rms/main/csvfiles/Jpop/*.csv')
 
     #all_song_data:ジャンルに対応した全ての楽曲のデータ
     all_song_data = pd.DataFrame()
@@ -90,7 +90,7 @@ def load_items(genre):
         song_data = pd.read_csv(path)
         all_song_data = pd.concat([all_song_data,song_data])
 
-    target_song_data = pd.read_csv('sutaminajing40/rms/main/app/csvfiles/target_playlist_items.csv')
+    target_song_data = pd.read_csv('sutaminajing40/rms/main/csvfiles/target_playlist_items.csv')
     #推薦の対象となる曲にnotice = 1をそれ以外にnotice = 0を
     all_song_data['notice'] = 0
     target_song_data['notice'] = 1
