@@ -22,10 +22,8 @@ def main():
             all_song_data,target_song_data = load_items(genre)
         with st.spinner('推薦中...(10分かかる場合があります)'):
             recommendation_ids = recommender(all_song_data,target_song_data,tempo,energy)
-        with st.spinner('プレイリスト作成中...'):
-            playlist_id = create_playlist(playlist_name='おすすめ',items=recommendation_ids)
-        st.write('作成したプレイリスト')
-        st.write('https://open.spotify.com/playlist/'+playlist_id)
+        display_result(recommendation_ids)
+
     
 
 #初期表示
@@ -33,7 +31,7 @@ def initial_display():
     #タイトル表示
     st.title('音楽推薦システム')
     #Spotify Playlist の共有URLを入力
-    URL = st.text_input('URLを入力',value='https://open.spotify.com/playlist/4ovXpa5zN9xoannaeP7OZF?si=rb5xpbtoQQeHZPeyiX97mw')
+    URL = st.text_input('URLを入力(公開プレイリストのみ)',value='https://open.spotify.com/playlist/4ovXpa5zN9xoannaeP7OZF?si=rb5xpbtoQQeHZPeyiX97mw')
 
     #ユーザが選択した要素
     tempo = st.slider(label='テンポ',min_value=0,max_value=100,value=50)
@@ -77,21 +75,20 @@ def url_to_items(URL):
 def load_items(genre):
     #選択されたジャンルによって取得する曲を選択
     if genre == '全て選択':
-        song_path = glob.glob('sutaminajing40/rms/main/csvfiles/*/*.csv')
+        song_path = glob.glob('./csvfiles/*/*.csv')
     if genre == 'ボカロ':
-        song_path = glob.glob('sutaminajing40/rms/main/csvfiles/vocaloid/*.csv')
+        song_path = glob.glob('./csvfiles/vocaloid/*.csv')
     if genre == 'J-POP':
-        song_path = glob.glob('sutaminajing40/rms/main/csvfiles/Jpop/*.csv')
+        song_path = glob.glob('./csvfiles/Jpop/*.csv')
 
     #all_song_data:ジャンルに対応した全ての楽曲のデータ
     all_song_data = pd.DataFrame()
     #ジャンルに対応した.csvのパスを取得
-    st.write(song_path)
     for path in song_path:
         song_data = pd.read_csv(path)
         all_song_data = pd.concat([all_song_data,song_data])
 
-    target_song_data = pd.read_csv('sutaminajing40/rms/main/csvfiles/target_playlist_items.csv')
+    target_song_data = pd.read_csv('./csvfiles/target_playlist_items.csv')
     #推薦の対象となる曲にnotice = 1をそれ以外にnotice = 0を
     all_song_data['notice'] = 0
     target_song_data['notice'] = 1
@@ -143,10 +140,18 @@ def recommender(all_song_data,target_song_data,tempo,energy):
     return recommendation_ids
 
 
-def create_playlist(playlist_name,items):
-    id = sp.user_playlist_create(user='nohoarito_yuzu_334129',name=playlist_name)['id']
-    sp.playlist_add_items(playlist_id=id,items = items)
-    return id
+def display_result(ids):
+    results = []
+    song_datas = sp.tracks(ids)['tracks']
+    for data in song_datas:
+        results.append([data['name'],data['artists'][0]['name']])
+    result = pd.DataFrame(
+        results,
+        columns=['曲名','アーティスト名']
+    )
+    st.dataframe(result)
+
+
 
 if __name__ == '__main__':
     auth_manager = SpotifyClientCredentials(client_id=si.id(),client_secret=si.secret())
