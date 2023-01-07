@@ -1,2 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-凛の花,0.524,0.408,7,-6.687,0,0.0268,0.28,0.00176,0.169,0.262,169.971,audio_features,2KpKZTI9C3MnLMCFBQq9WW,spotify:track:2KpKZTI9C3MnLMCFBQq9WW,https://api.spotify.com/v1/tracks/2KpKZTI9C3MnLMCFBQq9WW,https://api.spotify.com/v1/audio-analysis/2KpKZTI9C3MnLMCFBQq9WW,311992,4

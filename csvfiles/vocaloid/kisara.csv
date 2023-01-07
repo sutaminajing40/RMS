@@ -1,2 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-ココロ・クレーター (feat. 初音ミク),0.555,0.874,10,-3.79,0,0.0608,0.0268,8.77e-06,0.208,0.457,173.942,audio_features,7HYR28ETxTucBipp3vZPXW,spotify:track:7HYR28ETxTucBipp3vZPXW,https://api.spotify.com/v1/tracks/7HYR28ETxTucBipp3vZPXW,https://api.spotify.com/v1/audio-analysis/7HYR28ETxTucBipp3vZPXW,181379,4

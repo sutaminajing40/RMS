@@ -1,3 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-Fireburst,0.593,0.498,2,-7.914,1,0.0264,0.00271,0.933,0.0662,0.18,99.965,audio_features,2UAIpHUGA9tYlWIvWRbkqo,spotify:track:2UAIpHUGA9tYlWIvWRbkqo,https://api.spotify.com/v1/tracks/2UAIpHUGA9tYlWIvWRbkqo,https://api.spotify.com/v1/audio-analysis/2UAIpHUGA9tYlWIvWRbkqo,216000,4
-千光花火 (feat. MEIKO),0.574,0.766,9,-2.237,0,0.0302,0.3,1.19e-05,0.341,0.426,92.015,audio_features,4qbQ3sDEiJ10E3D5h5WzeF,spotify:track:4qbQ3sDEiJ10E3D5h5WzeF,https://api.spotify.com/v1/tracks/4qbQ3sDEiJ10E3D5h5WzeF,https://api.spotify.com/v1/audio-analysis/4qbQ3sDEiJ10E3D5h5WzeF,310435,4

@@ -1,2 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-青の世界,0.403,0.97,9,-3.567,0,0.277,0.000601,0.0104,0.112,0.338,143.408,audio_features,1YsU14a0rvzzFZv45gU745,spotify:track:1YsU14a0rvzzFZv45gU745,https://api.spotify.com/v1/tracks/1YsU14a0rvzzFZv45gU745,https://api.spotify.com/v1/audio-analysis/1YsU14a0rvzzFZv45gU745,198400,4

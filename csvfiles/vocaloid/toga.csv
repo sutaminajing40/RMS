@@ -1,3 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-Walk Myself Home,0.593,0.413,11,-10.163,1,0.0314,0.452,0,0.174,0.427,134.883,audio_features,1yzCKw9AN2cc1eD7Eg59v9,spotify:track:1yzCKw9AN2cc1eD7Eg59v9,https://api.spotify.com/v1/tracks/1yzCKw9AN2cc1eD7Eg59v9,https://api.spotify.com/v1/audio-analysis/1yzCKw9AN2cc1eD7Eg59v9,199111,4
-thinking from my chest,0.677,0.619,9,-7.389,1,0.081,0.686,0,0.125,0.529,107.931,audio_features,0aOS237AOVdtv9o968isbm,spotify:track:0aOS237AOVdtv9o968isbm,https://api.spotify.com/v1/tracks/0aOS237AOVdtv9o968isbm,https://api.spotify.com/v1/audio-analysis/0aOS237AOVdtv9o968isbm,156111,4

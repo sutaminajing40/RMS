@@ -1,2 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-Final Haven,0.422,0.941,2,-6.307,0,0.0484,9.08e-05,0.88,0.303,0.45,99.976,audio_features,3El17mz9Cu4sVALHOixC9J,spotify:track:3El17mz9Cu4sVALHOixC9J,https://api.spotify.com/v1/tracks/3El17mz9Cu4sVALHOixC9J,https://api.spotify.com/v1/audio-analysis/3El17mz9Cu4sVALHOixC9J,129094,4

@@ -1,3 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-out of line,0.463,0.475,6,-13.912,0,0.0324,0.342,0.922,0.322,0.493,139.931,audio_features,0sRuNHyFyl7dgcBF3bzZeh,spotify:track:0sRuNHyFyl7dgcBF3bzZeh,https://api.spotify.com/v1/tracks/0sRuNHyFyl7dgcBF3bzZeh,https://api.spotify.com/v1/audio-analysis/0sRuNHyFyl7dgcBF3bzZeh,133947,4
-Strassendokumentation,0.737,0.477,4,-9.872,1,0.282,0.681,0.00326,0.139,0.327,91.926,audio_features,6G2C1e6rVsli80M7gfVbfC,spotify:track:6G2C1e6rVsli80M7gfVbfC,https://api.spotify.com/v1/tracks/6G2C1e6rVsli80M7gfVbfC,https://api.spotify.com/v1/audio-analysis/6G2C1e6rVsli80M7gfVbfC,176000,4

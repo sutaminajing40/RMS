@@ -1,2 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-Gewurztraminer,0.782,0.747,8,-5.153,0,0.291,0.437,0,0.155,0.578,156.189,audio_features,3F2o7G6piySGQ18du3gMXw,spotify:track:3F2o7G6piySGQ18du3gMXw,https://api.spotify.com/v1/tracks/3F2o7G6piySGQ18du3gMXw,https://api.spotify.com/v1/audio-analysis/3F2o7G6piySGQ18du3gMXw,170000,4

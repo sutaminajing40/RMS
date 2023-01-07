@@ -1,3 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-スケープゴート,0.638,0.963,7,-3.652,0,0.0406,0.0381,0.0596,0.132,0.962,135.026,audio_features,24fVYJtl4JgKJlbBzdXa9L,spotify:track:24fVYJtl4JgKJlbBzdXa9L,https://api.spotify.com/v1/tracks/24fVYJtl4JgKJlbBzdXa9L,https://api.spotify.com/v1/audio-analysis/24fVYJtl4JgKJlbBzdXa9L,227852,4
-キコエテイマスカ・・・,0.65,0.983,2,-3.31,0,0.0587,0.111,0,0.254,0.745,120.029,audio_features,4pyVVs0vuf5vrGxqAMkem1,spotify:track:4pyVVs0vuf5vrGxqAMkem1,https://api.spotify.com/v1/tracks/4pyVVs0vuf5vrGxqAMkem1,https://api.spotify.com/v1/audio-analysis/4pyVVs0vuf5vrGxqAMkem1,194003,4

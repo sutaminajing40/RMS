@@ -1,3 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-Flash Train,0.595,0.737,5,-8.839,0,0.0718,0.0222,0.777,0.538,0.496,140.089,audio_features,7KMJ0exhGIUvwxuM2NQ97y,spotify:track:7KMJ0exhGIUvwxuM2NQ97y,https://api.spotify.com/v1/tracks/7KMJ0exhGIUvwxuM2NQ97y,https://api.spotify.com/v1/audio-analysis/7KMJ0exhGIUvwxuM2NQ97y,260571,4
-About Us,0.667,0.595,6,-9.026,1,0.0762,0.000445,0.939,0.298,0.312,130.999,audio_features,0BOnaOLZ4CR1nBwALGEHkY,spotify:track:0BOnaOLZ4CR1nBwALGEHkY,https://api.spotify.com/v1/tracks/0BOnaOLZ4CR1nBwALGEHkY,https://api.spotify.com/v1/audio-analysis/0BOnaOLZ4CR1nBwALGEHkY,219899,4

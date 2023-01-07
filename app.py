@@ -24,7 +24,7 @@ def main():
             recommendation_ids = recommender(all_song_data,target_song_data,tempo,energy)
         display_result(recommendation_ids)
 
-    
+
 
 #初期表示
 def initial_display():
@@ -72,11 +72,11 @@ def url_to_items(URL):
 def load_items(genre,playlist_items):
     #選択されたジャンルによって取得する曲を選択
     if genre == '全て選択':
-        song_path = glob.glob('./csvfiles/*/*.csv')
+        song_path = glob.glob('https://github.com/sutaminajing40/RMS/blob/e5fd98a354033f27c60ddc41484e81e8cbd0eb34/csvfiles/*/*.csv')
     if genre == 'ボカロ':
-        song_path = glob.glob('./csvfiles/vocaloid/*.csv')
+        song_path = glob.glob('https://github.com/sutaminajing40/RMS/blob/e5fd98a354033f27c60ddc41484e81e8cbd0eb34/csvfiles/vocaloid/*.csv')
     if genre == 'J-POP':
-        song_path = glob.glob('./csvfiles/Jpop/*.csv')
+        song_path = glob.glob('https://github.com/sutaminajing40/RMS/blob/e5fd98a354033f27c60ddc41484e81e8cbd0eb34/csvfiles/Jpop/*.csv')
 
     #all_song_data:ジャンルに対応した全ての楽曲のデータ
     all_song_data = pd.DataFrame()

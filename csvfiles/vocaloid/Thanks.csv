@@ -1,2 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-I'll Try,0.625,0.899,5,-3.483,1,0.0416,0.000103,0.0448,0.0634,0.713,131.975,audio_features,2S4rrtnnSpHJ0t7Gtovxo0,spotify:track:2S4rrtnnSpHJ0t7Gtovxo0,https://api.spotify.com/v1/tracks/2S4rrtnnSpHJ0t7Gtovxo0,https://api.spotify.com/v1/audio-analysis/2S4rrtnnSpHJ0t7Gtovxo0,225490,4

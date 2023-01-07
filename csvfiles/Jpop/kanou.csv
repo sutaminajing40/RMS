@@ -1,2 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-ハルを追いかけて,0.518,0.934,4,-3.753,0,0.0711,0.0264,2.79e-06,0.3,0.691,152.947,audio_features,50Rptx3Yt2GU41pvaTX2C5,spotify:track:50Rptx3Yt2GU41pvaTX2C5,https://api.spotify.com/v1/tracks/50Rptx3Yt2GU41pvaTX2C5,https://api.spotify.com/v1/audio-analysis/50Rptx3Yt2GU41pvaTX2C5,273840,4

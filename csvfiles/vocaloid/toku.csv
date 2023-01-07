@@ -1,3 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-WHATS THE MOVE,0.794,0.751,7,-8.704,1,0.174,8.11e-05,0.251,0.101,0.276,100.026,audio_features,3uhUaC3O1yLfgBlMYWJWoY,spotify:track:3uhUaC3O1yLfgBlMYWJWoY,https://api.spotify.com/v1/tracks/3uhUaC3O1yLfgBlMYWJWoY,https://api.spotify.com/v1/audio-analysis/3uhUaC3O1yLfgBlMYWJWoY,134412,4
-"Zuruiyo, Sakura",0.571,0.61,0,-6.363,1,0.0272,0.506,0,0.19,0.308,138.97,audio_features,2MPPiMbz2lxdPHSglvJEoO,spotify:track:2MPPiMbz2lxdPHSglvJEoO,https://api.spotify.com/v1/tracks/2MPPiMbz2lxdPHSglvJEoO,https://api.spotify.com/v1/audio-analysis/2MPPiMbz2lxdPHSglvJEoO,326627,4

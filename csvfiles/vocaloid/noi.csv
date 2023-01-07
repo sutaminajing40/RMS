@@ -1,2 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-パラストライア,0.476,0.958,0,-3.199,1,0.139,0.000126,0.869,0.227,0.682,159.996,audio_features,2ccmp7RjMXmGujPpMMIs6K,spotify:track:2ccmp7RjMXmGujPpMMIs6K,https://api.spotify.com/v1/tracks/2ccmp7RjMXmGujPpMMIs6K,https://api.spotify.com/v1/audio-analysis/2ccmp7RjMXmGujPpMMIs6K,146719,4

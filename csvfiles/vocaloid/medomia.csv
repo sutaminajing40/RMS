@@ -1,3 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-春じゃないわ,0.553,0.877,2,-4.958,0,0.0404,0.188,0,0.305,0.779,169.927,audio_features,2kwTFCErAVsINcVpSHyQmP,spotify:track:2kwTFCErAVsINcVpSHyQmP,https://api.spotify.com/v1/tracks/2kwTFCErAVsINcVpSHyQmP,https://api.spotify.com/v1/audio-analysis/2kwTFCErAVsINcVpSHyQmP,206887,4
-ノーステップノーライフ feat.音街ウナ,0.693,0.879,7,-5.889,1,0.106,0.0083,0.066,0.0542,0.891,141.903,audio_features,3bL8dTGAJAgG6iX1xGPDrj,spotify:track:3bL8dTGAJAgG6iX1xGPDrj,https://api.spotify.com/v1/tracks/3bL8dTGAJAgG6iX1xGPDrj,https://api.spotify.com/v1/audio-analysis/3bL8dTGAJAgG6iX1xGPDrj,211622,4

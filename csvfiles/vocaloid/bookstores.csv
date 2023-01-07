@@ -1,2 +1,0 @@
-name,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,track_href,analysis_url,duration_ms,time_signature
-夜のいきもの,0.452,0.899,9,-6.712,1,0.0327,0.00534,0.802,0.0683,0.504,144.961,audio_features,7LG0HgKpOkYvwUHCvR7kgY,spotify:track:7LG0HgKpOkYvwUHCvR7kgY,https://api.spotify.com/v1/tracks/7LG0HgKpOkYvwUHCvR7kgY,https://api.spotify.com/v1/audio-analysis/7LG0HgKpOkYvwUHCvR7kgY,252828,4
