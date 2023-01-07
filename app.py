@@ -147,7 +147,6 @@ def create_playlist(playlist_name,items):
     sp.playlist_add_items(playlist_id=id,items = items)
     return id
 
-
 if __name__ == '__main__':
     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=si.id(),
                                             client_secret=si.secret(),
