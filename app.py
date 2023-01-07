@@ -17,9 +17,9 @@ def main():
 
     if submitted:
         with st.spinner('プレイリスト取得中...'):
-            url_to_items(URL)
+            playlist_items = url_to_items(URL)
         with st.spinner('楽曲情報取得中...'):
-            all_song_data,target_song_data = load_items(genre)
+            all_song_data,target_song_data = load_items(genre,playlist_items)
         with st.spinner('推薦中...(10分かかる場合があります)'):
             recommendation_ids = recommender(all_song_data,target_song_data,tempo,energy)
         display_result(recommendation_ids)
@@ -43,7 +43,7 @@ def initial_display():
     return URL,genre,tempo,energy
 
 
-#プレイリスト共有URLからtarget_playlist_items.csvを作成する
+#プレイリスト共有URLからtarget_playlist_itemsを作成する
 def url_to_items(URL):
     #共有URLからプレイリストidを抜き出す
     target1 = 'playlist/'
@@ -66,13 +66,10 @@ def url_to_items(URL):
         item = item.set_index('name')
         items_df = pd.concat([items_df,item])
 
-    #target_playlist_items.csvを作成
-    dir = os.path.dirname(__file__)
-    file_name = os.path.join(dir,'csvfiles','target_playlist_items.csv')
-    items_df.to_csv(file_name,encoding='utf-8',index=True)
+    return items_df
 
 
-def load_items(genre):
+def load_items(genre,playlist_items):
     #選択されたジャンルによって取得する曲を選択
     if genre == '全て選択':
         song_path = glob.glob('./csvfiles/*/*.csv')
@@ -88,7 +85,7 @@ def load_items(genre):
         song_data = pd.read_csv(path)
         all_song_data = pd.concat([all_song_data,song_data])
 
-    target_song_data = pd.read_csv('./csvfiles/target_playlist_items.csv')
+    target_song_data = playlist_items
     #推薦の対象となる曲にnotice = 1をそれ以外にnotice = 0を
     all_song_data['notice'] = 0
     target_song_data['notice'] = 1
