@@ -101,6 +101,7 @@ def recommender(all_song_data,target_song_data,tempo,energy):
         #合体したデータの格納先
         ori_song_data = pd.DataFrame()
         ori_song_data = all_song_data.append(song_data)
+        ori_song_data = ori_song_data.drop_duplicates(subset='name',keep='last')
         #正規化
         minmax_sc = MinMaxScaler()
         X = ori_song_data.loc[:,'danceability':'tempo']
