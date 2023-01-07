@@ -20,7 +20,7 @@ def main():
             playlist_items = url_to_items(URL)
         with st.spinner('楽曲情報取得中...'):
             all_song_data,target_song_data = load_items(genre,playlist_items)
-        with st.spinner('推薦中...(10分かかる場合があります)'):
+        with st.spinner('推薦中...(10分ほどかかる場合があります)'):
             recommendation_ids = recommender(all_song_data,target_song_data,tempo,energy)
         display_result(recommendation_ids)
 
@@ -73,15 +73,12 @@ def load_items(genre,playlist_items):
     #選択されたジャンルによって取得する曲を選択
     #all_song_data:ジャンルに対応した全ての楽曲のデータ
     if genre == '全て選択':
-        all_song_data = pd.read_csv
-        ('https://github.com/sutaminajing40/RMS/blob/f147e971b1e515f938d0a0108c83ab8ea6a36c18/csvfiles/Jpop/music_data.csv')
-        all_song_data = pd.concat([all_song_data,
-        pd.read_csv('https://github.com/sutaminajing40/RMS/blob/f147e971b1e515f938d0a0108c83ab8ea6a36c18/csvfiles/vocaloid/music_data.csv')])
+        all_song_data = pd.read_csv('csvfiles/Jpop/music_data.csv')
+        all_song_data = pd.concat([all_song_data,pd.read_csv('csvfiles/vocaloid/music_data.csv')])
     if genre == 'ボカロ':
-        all_song_data = pd.read_csv('https://github.com/sutaminajing40/RMS/blob/f147e971b1e515f938d0a0108c83ab8ea6a36c18/csvfiles/vocaloid/music_data.csv')
+        all_song_data = pd.read_csv('csvfiles/vocaloid/music_data.csv')
     if genre == 'J-POP':
-        all_song_data = pd.read_csv
-        ('https://github.com/sutaminajing40/RMS/blob/f147e971b1e515f938d0a0108c83ab8ea6a36c18/csvfiles/Jpop/music_data.csv')
+        all_song_data = pd.read_csv('csvfiles/Jpop/music_data.csv')
 
 
     target_song_data = playlist_items
