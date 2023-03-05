@@ -1,3 +1,4 @@
+import datetime
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
@@ -16,8 +17,7 @@ def main():
 
     if submitted:
         #API認証
-        sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope="playlist-modify-public",
-                                                       client_id=si.id(),
+        sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=si.id(),
                                                        client_secret=si.secret(),
                                                        redirect_uri='https://localhost:8888/callback/',
                                                        scope='playlist-modify-public'))
@@ -28,7 +28,7 @@ def main():
         with st.spinner('推薦中...(10分ほどかかる場合があります)'):
             recommendation_ids = recommender(all_song_data,target_song_data,tempo,energy)
         display_result(sp,recommendation_ids)
-        #create_playlist(sp,recommendation_ids,username,'おすすめ')
+        create_playlist(sp,recommendation_ids,username)
 
 
 
@@ -38,7 +38,7 @@ def initial_display():
     st.title('音楽推薦システム')
     #Spotify Playlist の共有URLを入力
     URL = st.text_input('URLを入力(公開プレイリストのみ)',value='https://open.spotify.com/playlist/4ovXpa5zN9xoannaeP7OZF?si=rb5xpbtoQQeHZPeyiX97mw')
-    username = st.text_input('ユーザーidを入力')
+    username = st.text_input('ユーザーidを入力',value='nohoarito_yuzu_334129')
     #ユーザが選択した要素
     tempo = st.slider(label='テンポ',min_value=0,max_value=100,value=50)
     energy = st.slider(label = 'エネルギー',min_value=0,max_value=100,value=50)
@@ -146,7 +146,11 @@ def recommender(all_song_data,target_song_data,tempo,energy):
     return recommendation_ids
 
 
-def create_playlist(sp,items,username,playlist_name):
+def create_playlist(sp,items,username):
+    #プレイリスト名設定
+    dt_now = str(datetime.datetime.now().strftime('%Y年%m月%d日 %H時%M分%S秒'))
+    playlist_name = 'おすすめ'+dt_now
+
     id = sp.user_playlist_create(user=username,name=playlist_name)['id']
     sp.playlist_add_items(playlist_id=id,items = items)
 
