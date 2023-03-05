@@ -11,7 +11,7 @@ import os
 
 
 def main():
-    genre = int(input('ジャンルを選択 1:邦ロック 2:女性アイドル 3:ボカロ 4:J-POP >>'))
+    genre = int(input('ジャンルを選択 1:邦ロック 2:女性アイドル 3:ボカロ 4:J-POP 99:テスト>> '))
     if genre == 1:
         art_names = get_Japanese_band_names()
     if genre == 2:
@@ -20,6 +20,8 @@ def main():
         art_names = get_vcp_names()
     if genre == 4:
         art_names = get_jpop_names()
+    if genre == 99:
+        art_names = ['sumika','キタニタツヤ']
     artnames_to_csv(art_names,genre)
     consolidate_data(genre)
 
@@ -164,11 +166,11 @@ def artnames_to_csv(art_names,genre):
             if genre == 2:
                 folder = 'girls_idol'
             if genre == 3:
-                folder = 'internet_singer'
-            if genre == 4:
                 folder = 'vocaloid'
-            if genre == 5:
-                folder = 'Jpop'            
+            if genre == 4:
+                folder = 'Jpop' 
+            if genre == 99:     
+                folder = 'test'      
             dir = os.path.dirname(__file__)
             file_name = os.path.join(dir,'csvfiles',folder,name)
             df.to_csv(file_name,encoding='utf-8',index=True)
@@ -183,6 +185,8 @@ def consolidate_data(genre):
         path = './csvfiles/vocaloid'
     if genre == 4:
         path = './csvfiles/Jpop'
+    if genre == 99:
+        path = './csvfiles/test'
 
     csv_files = glob.glob(os.path.join(path,'*.csv'))
 
