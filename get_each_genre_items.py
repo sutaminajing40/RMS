@@ -11,19 +11,17 @@ import os
 
 
 def main():
-    genre = int(input('ジャンルを選択 1:邦ロック 2:女性アイドル 4:ボカロ 5:J-POP >>'))
+    genre = int(input('ジャンルを選択 1:邦ロック 2:女性アイドル 3:ボカロ 4:J-POP >>'))
     if genre == 1:
         art_names = get_Japanese_band_names()
     if genre == 2:
         art_names = get_girls_idol_names()
     if genre == 3:
-        art_names = get_internet_singer_names()
-    if genre == 4:
         art_names = get_vcp_names()
-    if genre == 5:
+    if genre == 4:
         art_names = get_jpop_names()
     artnames_to_csv(art_names,genre)
-    consolidate_data()
+    consolidate_data(genre)
 
 
 def get_Japanese_band_names():
@@ -56,10 +54,6 @@ def get_girls_idol_names():
             girls_idol_names.append(name.string)
 
     return girls_idol_names
-
-
-def get_internet_singer_names():
-    print()
 
 
 def get_vcp_names():
@@ -179,18 +173,15 @@ def artnames_to_csv(art_names,genre):
             file_name = os.path.join(dir,'csvfiles',folder,name)
             df.to_csv(file_name,encoding='utf-8',index=True)
 
-def consolidate_data():
+def consolidate_data(genre):
     # パスで指定したファイルの一覧をリスト形式で取得. （ここでは一階層下のtestファイル以下）
-    genre = int(input('ジャンルを選択 1:邦ロック 2:女性アイドル 3:歌い手 4:ボカロ 5:J-POP >>'))
     if genre == 1:
         path = './csvfiles/Japanese_band'
     if genre == 2:
         path = './csvfiles/girls_idol'
     if genre == 3:
-        path = './csvfiles/internet_singer'
-    if genre == 4:
         path = './csvfiles/vocaloid'
-    if genre == 5:
+    if genre == 4:
         path = './csvfiles/Jpop'
 
     csv_files = glob.glob(os.path.join(path,'*.csv'))
