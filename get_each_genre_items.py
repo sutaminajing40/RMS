@@ -21,7 +21,7 @@ def main():
     if genre == 4:
         art_names = get_jpop_names()
     if genre == 99:
-        art_names = ['sumika','キタニタツヤ']
+        art_names = ['sumika','キタニタツヤ','かいりきベア','市瀬るぽ','syudou']
     artnames_to_csv(art_names,genre)
     consolidate_data(genre)
 
