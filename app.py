@@ -6,7 +6,7 @@ import spotipy
 import spotify_id as si
 from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy.util as util
-
+import pprint
 
 
 
@@ -66,6 +66,8 @@ def url_to_items(sp,URL):
     #playlist_idからプレイリスト内の楽曲情報を取り出せる
     playlist_items = sp.playlist_items(playlist_id)['items']
 
+    for item in playlist_items:
+        pprint.pprint(item['track']['name'])
     #playlist_itemsの各楽曲から解析情報を取り出す
     for track in playlist_items:
         result = sp.audio_features(track['track']['id'])
