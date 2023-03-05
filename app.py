@@ -1,28 +1,36 @@
-import glob
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
-import os
 import pandas as pd
 import spotipy
 import spotify_id as si
 from spotipy.oauth2 import SpotifyClientCredentials
+import spotipy.util as util
+
 
 
 
 def main():
     with st.form('送信フォーム'):
-        URL,genre,tempo,energy = initial_display()
+        URL,username,genre,tempo,energy = initial_display()
         submitted = st.form_submit_button("送信")
 
     if submitted:
+        #API認証
+        token = util.prompt_for_user_token(username,
+                                    scope="playlist-modify-public",
+                                    client_id=si.id(),
+                                    client_secret=si.secret(),
+                                    redirect_uri='https://localhost:8888/callback/')
+        sp = spotipy.Spotify(auth=token)
         with st.spinner('プレイリスト取得中...'):
-            playlist_items = url_to_items(URL)
+            playlist_items = url_to_items(sp,URL)
         with st.spinner('楽曲情報取得中...'):
             all_song_data,target_song_data = load_items(genre,playlist_items)
         with st.spinner('推薦中...(10分ほどかかる場合があります)'):
             recommendation_ids = recommender(all_song_data,target_song_data,tempo,energy)
-        display_result(recommendation_ids)
+        display_result(sp,recommendation_ids)
+        #create_playlist(sp,recommendation_ids,username,'おすすめ')
 
 
 
@@ -32,19 +40,19 @@ def initial_display():
     st.title('音楽推薦システム')
     #Spotify Playlist の共有URLを入力
     URL = st.text_input('URLを入力(公開プレイリストのみ)',value='https://open.spotify.com/playlist/4ovXpa5zN9xoannaeP7OZF?si=rb5xpbtoQQeHZPeyiX97mw')
-
+    username = st.text_input('ユーザーidを入力')
     #ユーザが選択した要素
     tempo = st.slider(label='テンポ',min_value=0,max_value=100,value=50)
     energy = st.slider(label = 'エネルギー',min_value=0,max_value=100,value=50)
     
     #ユーザが選択したジャンル
-    genre = st.selectbox('ジャンルを選択',('全て選択','ボカロ','J-POP'))
+    genre = st.selectbox('ジャンルを選択',('全て選択','邦ロック','ボカロ','J-POP'))
 
-    return URL,genre,tempo,energy
+    return URL,username,genre,tempo,energy
 
 
 #プレイリスト共有URLからtarget_playlist_itemsを作成する
-def url_to_items(URL):
+def url_to_items(sp,URL):
     #共有URLからプレイリストidを抜き出す
     target1 = 'playlist/'
     target2 = '?'
@@ -74,7 +82,9 @@ def load_items(genre,playlist_items):
     #all_song_data:ジャンルに対応した全ての楽曲のデータ
     if genre == '全て選択':
         all_song_data = pd.read_csv('csvfiles/Jpop/music_data.csv')
-        all_song_data = pd.concat([all_song_data,pd.read_csv('csvfiles/vocaloid/music_data.csv')])
+        all_song_data = pd.concat([all_song_data,pd.read_csv('csvfiles/vocaloid/music_data.csv'),pd.read_csv('csvfiles/Japanese_band/music_data.csv')])
+    if genre == '邦ロック':
+        all_song_data = pd.read_csv('csvfiles/Japanese_band/music_data.csv')
     if genre == 'ボカロ':
         all_song_data = pd.read_csv('csvfiles/vocaloid/music_data.csv')
     if genre == 'J-POP':
@@ -134,7 +144,12 @@ def recommender(all_song_data,target_song_data,tempo,energy):
     return recommendation_ids
 
 
-def display_result(ids):
+def create_playlist(sp,items,username,playlist_name):
+    id = sp.user_playlist_create(user=username,name=playlist_name)['id']
+    sp.playlist_add_items(playlist_id=id,items = items)
+
+
+def display_result(sp,ids):
     results = []
     song_datas = sp.tracks(ids)['tracks']
     for data in song_datas:
@@ -145,9 +160,5 @@ def display_result(ids):
     )
     st.dataframe(result)
 
-
-
 if __name__ == '__main__':
-    auth_manager = SpotifyClientCredentials(client_id=si.id(),client_secret=si.secret())
-    sp = spotipy.Spotify(auth_manager=auth_manager)
     main()

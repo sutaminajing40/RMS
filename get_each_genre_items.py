@@ -10,7 +10,7 @@ import os
 
 
 def main():
-    genre = int(input('ジャンルを選択 4:ボカロ 5:J-POP >>'))
+    genre = int(input('ジャンルを選択 1:邦ロック 4:ボカロ 5:J-POP >>'))
     if genre == 1:
         art_names = get_Japanese_band_names()
     if genre == 2:
@@ -25,7 +25,16 @@ def main():
 
 
 def get_Japanese_band_names():
-    print()
+    Japanese_band_names = []
+    url = 'https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%83%90%E3%83%B3%E3%83%89%E4%B8%80%E8%A6%A7'
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text,'html.parser')
+    elems = soup.find_all('li')
+
+    for elem in elems:
+        Japanese_band_names.append(elem.a.string)
+    Japanese_band_names = Japanese_band_names[326:2791]
+    return Japanese_band_names
 
 
 def get_girls_idol_names():
