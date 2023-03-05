@@ -1,3 +1,4 @@
+import glob
 import re
 import requests
 from bs4 import BeautifulSoup
@@ -10,18 +11,19 @@ import os
 
 
 def main():
-    genre = int(input('ジャンルを選択 1:邦ロック 4:ボカロ 5:J-POP >>'))
+    genre = int(input('ジャンルを選択 1:邦ロック 2:女性アイドル 3:ボカロ 4:J-POP 99:テスト>> '))
     if genre == 1:
         art_names = get_Japanese_band_names()
     if genre == 2:
         art_names = get_girls_idol_names()
     if genre == 3:
-        art_names = get_internet_singer_names()
-    if genre == 4:
         art_names = get_vcp_names()
-    if genre == 5:
+    if genre == 4:
         art_names = get_jpop_names()
+    if genre == 99:
+        art_names = ['sumika','キタニタツヤ']
     artnames_to_csv(art_names,genre)
+    consolidate_data(genre)
 
 
 def get_Japanese_band_names():
@@ -38,11 +40,22 @@ def get_Japanese_band_names():
 
 
 def get_girls_idol_names():
-    print()
+    girls_idol_names = []
+    #スクレイピング先サイト
+    url = 'https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%A5%B3%E6%80%A7%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E4%B8%80%E8%A6%A7'
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text,'html.parser')
+    ##mw-content-text > div.mw-parser-output > divの要素を全て取得
+    elems = soup.select('#mw-content-text > div.mw-parser-output > div')
 
+    for elem in elems:
+        #取得したもののうちaタグに該当するものを
+        names = elem.select('a')
+        for name in names:
+            #抜き出したものの中から要素だけを
+            girls_idol_names.append(name.string)
 
-def get_internet_singer_names():
-    print()
+    return girls_idol_names
 
 
 def get_vcp_names():
@@ -153,15 +166,46 @@ def artnames_to_csv(art_names,genre):
             if genre == 2:
                 folder = 'girls_idol'
             if genre == 3:
-                folder = 'internet_singer'
-            if genre == 4:
                 folder = 'vocaloid'
-            if genre == 5:
-                folder = 'Jpop'            
+            if genre == 4:
+                folder = 'Jpop' 
+            if genre == 99:     
+                folder = 'test'      
             dir = os.path.dirname(__file__)
             file_name = os.path.join(dir,'csvfiles',folder,name)
             df.to_csv(file_name,encoding='utf-8',index=True)
 
+def consolidate_data(genre):
+    # パスで指定したファイルの一覧をリスト形式で取得. （ここでは一階層下のtestファイル以下）
+    if genre == 1:
+        path = './csvfiles/Japanese_band'
+    if genre == 2:
+        path = './csvfiles/girls_idol'
+    if genre == 3:
+        path = './csvfiles/vocaloid'
+    if genre == 4:
+        path = './csvfiles/Jpop'
+    if genre == 99:
+        path = './csvfiles/test'
+
+    csv_files = glob.glob(os.path.join(path,'*.csv'))
+
+    #読み込むファイルのリストを表示
+    for a in csv_files:
+        print(a)
+
+    #csvファイルの中身を追加していくリストを用意
+    data_list = []
+
+    #読み込むファイルのリストを走査
+    for file in csv_files:
+        data_list.append(pd.read_csv(file))
+
+    #リストを全て行方向に結合
+    #axis=0:行方向に結合, sort
+    df = pd.concat(data_list, axis=0, sort=True)
+
+    df.to_csv(os.path.join(path,"music_data.csv"),index=False)
 
 if __name__ == '__main__':
     main()
