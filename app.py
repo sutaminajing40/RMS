@@ -46,7 +46,7 @@ def initial_display():
     energy = st.slider(label = 'エネルギー',min_value=0,max_value=100,value=50)
     
     #ユーザが選択したジャンル
-    genre = st.selectbox('ジャンルを選択',('全て選択','邦ロック','ボカロ','J-POP','女性アイドル'))
+    genre = st.selectbox('ジャンルを選択',('全て選択','邦ロック','ボカロ','J-POP','女性アイドル','test'))
 
     return URL,username,genre,tempo,energy
 
@@ -92,6 +92,8 @@ def load_items(genre,playlist_items):
         all_song_data = pd.read_csv('csvfiles/Jpop/music_data.csv')
     if genre == '女性アイドル':
         all_song_data = pd.read_csv('csvfiles/girls_idol/music_data.csv')
+    if genre == 'test':
+        all_song_data = pd.read_csv('csvfiles/test/music_data.csv')
 
 
     target_song_data = playlist_items
