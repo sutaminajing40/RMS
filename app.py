@@ -46,7 +46,7 @@ def initial_display():
     energy = st.slider(label = 'エネルギー',min_value=0,max_value=100,value=50)
     
     #ユーザが選択したジャンル
-    genre = st.selectbox('ジャンルを選択',('全て選択','邦ロック','ボカロ','J-POP'))
+    genre = st.selectbox('ジャンルを選択',('全て選択','邦ロック','ボカロ','J-POP','女性アイドル'))
 
     return URL,username,genre,tempo,energy
 
@@ -82,13 +82,16 @@ def load_items(genre,playlist_items):
     #all_song_data:ジャンルに対応した全ての楽曲のデータ
     if genre == '全て選択':
         all_song_data = pd.read_csv('csvfiles/Jpop/music_data.csv')
-        all_song_data = pd.concat([all_song_data,pd.read_csv('csvfiles/vocaloid/music_data.csv'),pd.read_csv('csvfiles/Japanese_band/music_data.csv')])
+        all_song_data = pd.concat([all_song_data,pd.read_csv('csvfiles/vocaloid/music_data.csv'),
+        pd.read_csv('csvfiles/Japanese_band/music_data.csv'),pd.read_csv('csvfiles/girls_idol/music_data.csv')])
     if genre == '邦ロック':
         all_song_data = pd.read_csv('csvfiles/Japanese_band/music_data.csv')
     if genre == 'ボカロ':
         all_song_data = pd.read_csv('csvfiles/vocaloid/music_data.csv')
     if genre == 'J-POP':
         all_song_data = pd.read_csv('csvfiles/Jpop/music_data.csv')
+    if genre == '女性アイドル':
+        all_song_data = pd.read_csv('csvfiles/girls_idol/music_data.csv')
 
 
     target_song_data = playlist_items
