@@ -46,7 +46,7 @@ def initial_display():
     energy = st.slider(label = 'エネルギー',min_value=0,max_value=100,value=50)
     
     #ユーザが選択したジャンル
-    genre = st.selectbox('ジャンルを選択',('全て選択','邦ロック','ボカロ','J-POP','女性アイドル','test'))
+    genre = st.selectbox('ジャンルを選択',('test','全て選択','邦ロック','ボカロ','J-POP','女性アイドル'))
 
     return URL,username,genre,tempo,energy
 
@@ -159,10 +159,10 @@ def display_result(sp,ids):
     results = []
     song_datas = sp.tracks(ids)['tracks']
     for data in song_datas:
-        results.append([data['name'],data['artists'][0]['name']])
+        results.append([data['name'],data['artists'][0]['name'],data['id']])
     result = pd.DataFrame(
         results,
-        columns=['曲名','アーティスト名']
+        columns=['曲名','アーティスト名','id']
     )
     st.dataframe(result)
 
