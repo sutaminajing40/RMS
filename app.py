@@ -4,8 +4,7 @@ import streamlit as st
 import pandas as pd
 import spotipy
 import spotify_id as si
-from spotipy.oauth2 import SpotifyClientCredentials
-import spotipy.util as util
+from spotipy.oauth2 import SpotifyOAuth
 
 
 
@@ -17,12 +16,11 @@ def main():
 
     if submitted:
         #API認証
-        token = util.prompt_for_user_token(username,
-                                    scope="playlist-modify-public",
-                                    client_id=si.id(),
-                                    client_secret=si.secret(),
-                                    redirect_uri='https://localhost:8888/callback/')
-        sp = spotipy.Spotify(auth=token)
+        sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope="playlist-modify-public",
+                                                       client_id=si.id(),
+                                                       client_secret=si.secret(),
+                                                       redirect_uri='https://localhost:8888/callback/',
+                                                       scope='playlist-modify-public'))
         with st.spinner('プレイリスト取得中...'):
             playlist_items = url_to_items(sp,URL)
         with st.spinner('楽曲情報取得中...'):
