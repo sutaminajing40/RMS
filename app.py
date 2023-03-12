@@ -17,10 +17,7 @@ def main():
 
     if submitted:
         #API認証
-        sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=si.id(),
-                                                       client_secret=si.secret(),
-                                                       redirect_uri='https://localhost:8888/callback/',
-                                                       scope='playlist-modify-public'))
+        sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope='playlist-modify-public'))
         with st.spinner('プレイリスト取得中...'):
             playlist_items = url_to_items(sp,URL)
         with st.spinner('楽曲情報取得中...'):
