@@ -4,7 +4,6 @@ from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
 import pandas as pd
 import spotipy
-import spotify_id as si
 from spotipy.oauth2 import SpotifyOAuth
 
 
