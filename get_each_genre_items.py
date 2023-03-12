@@ -3,7 +3,6 @@ import re
 import requests
 from bs4 import BeautifulSoup
 import tqdm
-import spotify_id as si
 import spotipy
 import pandas as pd
 import pykakasi
@@ -100,7 +99,7 @@ def get_jpop_names():
 
 def artnames_to_csv(art_names,genre):
     #認証
-    client_credentials_manager = spotipy.oauth2.SpotifyClientCredentials(si.id(), si.secret())
+    client_credentials_manager = spotipy.oauth2.SpotifyClientCredentials()
     sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager,language='ja')
 
     #データフレーム宣言
