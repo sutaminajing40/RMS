@@ -3,7 +3,6 @@ from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
 import pandas as pd
 import spotipy
-import spotify_id as si
 from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy.util as util
 
@@ -17,11 +16,7 @@ def main():
 
     if submitted:
         #API認証
-        token = util.prompt_for_user_token(username,
-                                    scope="playlist-modify-public",
-                                    client_id=si.id(),
-                                    client_secret=si.secret(),
-                                    redirect_uri='https://localhost:8888/callback/')
+        token = util.prompt_for_user_token(username,scope="playlist-modify-public")
         sp = spotipy.Spotify(auth=token)
         with st.spinner('プレイリスト取得中...'):
             playlist_items = url_to_items(sp,URL)
