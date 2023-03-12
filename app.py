@@ -16,8 +16,8 @@ def main():
 
     if submitted:
         #API認証
-        token = util.prompt_for_user_token(username,scope="playlist-modify-public")
-        sp = spotipy.Spotify(auth=token)
+        auth_manager = SpotifyClientCredentials()
+        sp = spotipy.Spotify(auth_manager=auth_manager)
         with st.spinner('プレイリスト取得中...'):
             playlist_items = url_to_items(sp,URL)
         with st.spinner('楽曲情報取得中...'):
