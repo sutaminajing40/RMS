@@ -1,32 +1,83 @@
+import datetime
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
 import pandas as pd
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-import spotipy.util as util
+from bokeh.models.widgets import Div
 
 
 
 
 def main():
-    with st.form('送信フォーム'):
-        URL,username,genre,tempo,energy = initial_display()
-        submitted = st.form_submit_button("送信")
+    #API認証
+    sp = authorization()
+    if sp:
+        with st.form('送信フォーム'):
+            URL,username,genre,tempo,energy = initial_display()
+            submitted = st.form_submit_button("送信")
 
-    if submitted:
-        #API認証
-        auth_manager = SpotifyClientCredentials()
+        if submitted:
+            with st.spinner('プレイリスト取得中...'):
+                playlist_items = url_to_items(sp,URL)
+            with st.spinner('楽曲情報取得中...'):
+                all_song_data,target_song_data = load_items(genre,playlist_items)
+            with st.spinner('推薦中...(10分ほどかかる場合があります)'):
+                recommendation_ids = recommender(all_song_data,target_song_data,tempo,energy)
+            display_result(sp,recommendation_ids)
+            create_playlist(sp,recommendation_ids,username)
+
+
+
+class StreamlitCacheHandler(spotipy.cache_handler.CacheHandler):
+    """
+    A cache handler that stores the token info in the session framework
+    provided by streamlit.
+    """
+    def __init__(self, session):
+        self.session = session
+
+    def get_cached_token(self):
+        token_info = None
+        try:
+            token_info = self.session["token_info"]
+        except KeyError:
+            print("Token not found in the session")
+
+        return token_info
+
+    def save_token_to_cache(self, token_info):
+        try:
+            self.session["token_info"] = token_info
+        except Exception as e:
+            print("Error saving token to cache: " + str(e))
+
+
+def authorization():
+    scope = "playlist-modify-public"
+    cache_handler = StreamlitCacheHandler(st.session_state)  # same as the FlaskSessionCacheHandler
+    auth_manager = spotipy.oauth2.SpotifyOAuth(scope=scope,
+                                                cache_handler=cache_handler,
+                                                show_dialog=True)
+    # if there is no cached token, open the sign in page
+    if not auth_manager.validate_token(cache_handler.get_cached_token()):
+        auth_url = auth_manager.get_authorize_url()  # log in url
+        st.title('Spotify ログイン')
+
+    # if you're redirected from the sign in page, there is a code in the url
+    if 'code' in st.experimental_get_query_params():  
+        auth_manager.get_access_token(st.experimental_get_query_params()['code'])  # use the code to generate the token
+        sp = spotipy.Spotify(auth_manager=auth_manager)  
+        return sp
+    elif st.button('Log in'):
+        js = "window.open('{}')".format(auth_url)  # New tab or window
+        #js = "window.location.href = '{}'".format(os.environ['SPOTIPY_REDIRECT_URI'])  # Current tab
+        html = '<img src onerror="{}">'.format(js)
+        div = Div(text=html)
+        st.bokeh_chart(div) 
         sp = spotipy.Spotify(auth_manager=auth_manager)
-        with st.spinner('プレイリスト取得中...'):
-            playlist_items = url_to_items(sp,URL)
-        with st.spinner('楽曲情報取得中...'):
-            all_song_data,target_song_data = load_items(genre,playlist_items)
-        with st.spinner('推薦中...(10分ほどかかる場合があります)'):
-            recommendation_ids = recommender(all_song_data,target_song_data,tempo,energy)
-        display_result(sp,recommendation_ids)
-        #create_playlist(sp,recommendation_ids,username,'おすすめ')
-
+        return sp
 
 
 #初期表示
@@ -143,7 +194,11 @@ def recommender(all_song_data,target_song_data,tempo,energy):
     return recommendation_ids
 
 
-def create_playlist(sp,items,username,playlist_name):
+def create_playlist(sp,items,username):
+    #プレイリスト名設定
+    dt_now = str(datetime.datetime.now().strftime('%Y年%m月%d日 %H時%M分%S秒'))
+    playlist_name = 'おすすめ'+dt_now
+
     id = sp.user_playlist_create(user=username,name=playlist_name)['id']
     sp.playlist_add_items(playlist_id=id,items = items)
 
