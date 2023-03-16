@@ -2,3 +2,4 @@ streamlit==1.14.1
 pandas==1.2.1
 spotipy==2.22.0
 scikit-learn== 1.2.0
+bokeh== 2.4.3
