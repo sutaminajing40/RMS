@@ -229,19 +229,17 @@ def get_csv_value(df,columns):
 def clustering(df):
     n_clusters = 2
     #必要な属性だけ抜き出す
-    cust_array = np.array([df['loudness'].tolist(),
+    cust_array = np.array([df['danceability'].tolist(),
+                       df['energy'].tolist(),
                        df['loudness'].tolist(),
-                       df['mode'].tolist(),
-                       df['speechiness'].tolist(),
-                       df['mode'].tolist(),
                        df['speechiness'].tolist(),
                        df['acousticness'].tolist(),
                        df['instrumentalness'].tolist(),
                        df['liveness'].tolist(),
+                       df['instrumentalness'].tolist(),
+                       df['liveness'].tolist(),
                        df['valence'].tolist(),
                        df['tempo'].tolist(),
-                       df['duration_ms'].tolist(),
-                       df['time_signature'].tolist()
                        ], np.int32)
 
     #反転
@@ -256,10 +254,7 @@ def clustering(df):
     new_df = df[df.attribute == target_song_attribute]
 
     new_df_cnt = new_df['id'].nunique()
-    if new_df_cnt < 6:
-        return new_df
-        #クラスタリング
-    return clustering(new_df)
+    return new_df
 
 
 if __name__ == '__main__':
