@@ -230,7 +230,7 @@ def get_csv_value(df,columns):
 
 def clustering(df):
     #クラスター数 -> 渡されたdfの行数/10
-    n_clusters = 2
+    n_clusters = 10
     #必要な属性だけ抜き出す
     cust_array = np.array([df['danceability'].tolist(),
                        df['energy'].tolist(),
