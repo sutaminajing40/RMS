@@ -227,7 +227,8 @@ def get_csv_value(df,columns):
 
 
 def clustering(df):
-    n_clusters = 2
+    #クラスター数 -> 渡されたdfの行数/10
+    n_clusters = len(df)/10
     #必要な属性だけ抜き出す
     cust_array = np.array([df['danceability'].tolist(),
                        df['energy'].tolist(),
@@ -253,7 +254,6 @@ def clustering(df):
     #注目している曲とattributeが一緒のもののみ残す
     new_df = df[df.attribute == target_song_attribute]
 
-    new_df_cnt = new_df['id'].nunique()
     return new_df
 
 
