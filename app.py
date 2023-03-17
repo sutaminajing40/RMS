@@ -4,8 +4,8 @@ from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
 import pandas as pd
 import spotipy
-from spotipy.oauth2 import SpotifyClientCredentials
 from bokeh.models.widgets import Div
+from sklearn.cluster import KMeans
 
 
 
@@ -173,6 +173,10 @@ def recommender(all_song_data,target_song_data,tempo,energy):
         energy_bias = energy*-0.015+2
         ori_song_data['tempo']*=tempo_bias
         ori_song_data['energy']*=energy_bias
+
+        #クラスタリングで足切り
+        ori_song_data = clustering(ori_song_data)
+
         #最近傍探索で一番近いものを探す
         comparison_songs = ori_song_data[ori_song_data.notice == 0]
         target_song = ori_song_data[ori_song_data.notice == 1]
@@ -213,6 +217,50 @@ def display_result(sp,ids):
         columns=['曲名','アーティスト名']
     )
     st.dataframe(result)
+
+
+#columnsで与えられた値だけを取り出す。.locだとseries型で渡されるので扱いにくい
+def get_csv_value(df,columns):
+    b = df.loc[:,columns]
+    c = b.iloc[-1]
+    return c
+
+
+def clustering(df):
+    n_clusters = 2
+    #必要な属性だけ抜き出す
+    cust_array = np.array([df['loudness'].tolist(),
+                       df['loudness'].tolist(),
+                       df['mode'].tolist(),
+                       df['speechiness'].tolist(),
+                       df['mode'].tolist(),
+                       df['speechiness'].tolist(),
+                       df['acousticness'].tolist(),
+                       df['instrumentalness'].tolist(),
+                       df['liveness'].tolist(),
+                       df['valence'].tolist(),
+                       df['tempo'].tolist(),
+                       df['duration_ms'].tolist(),
+                       df['time_signature'].tolist()
+                       ], np.int32)
+
+    #反転
+    cust_array = cust_array.T
+    #attributeにクラスタリング結果
+    attribute = KMeans(n_clusters=n_clusters).fit_predict(cust_array)
+    #cluster_idにattributeを
+    df['attribute']=attribute
+    #注目している曲のクラスタリング結果をtarget_song_attributeに代入
+    target_song_attribute = get_csv_value(df[df.notice == 1],'attribute')
+    #注目している曲とattributeが一緒のもののみ残す
+    new_df = df[df.attribute == target_song_attribute]
+
+    new_df_cnt = new_df['id'].nunique()
+    if new_df_cnt < 6:
+        return new_df
+        #クラスタリング
+    return clustering(new_df)
+
 
 if __name__ == '__main__':
     main()
