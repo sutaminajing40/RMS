@@ -175,9 +175,9 @@ def recommender(all_song_data,target_song_data,tempo,energy):
         ori_song_data['energy']*=energy_bias
 
         #クラスタリングで足切り
-        st.write(ori_song_data)
+        st.write(len(ori_song_data))
         ori_song_data = clustering(ori_song_data)
-        st.write(ori_song_data)
+        st.write(len(ori_song_data))
 
         #最近傍探索で一番近いものを探す
         comparison_songs = ori_song_data[ori_song_data.notice == 0]
