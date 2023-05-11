@@ -3,4 +3,4 @@ pandas==1.2.1
 spotipy==2.22.0
 scikit-learn== 1.2.0
 bokeh== 2.4.3
-altair==5.0.0
+altair==4.0.0
